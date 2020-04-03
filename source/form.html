@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header>
+      <h1>Функциональное питание для котов</h1>
+      <img scr="#">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог продукции</a></li>
+        <li><a href="form.html">Подбор программы</a></li>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <h1>Подбор программы</h1>
+        <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset>
+            <label>Имя:*<input type="text" name="catname" placeholder="Барсик" required></label>
+            <label>Вес (кг):*<input type="number" name="catweight" placeholder="7" required></label>
+            <label>Возраст (лет):<input type="number" name="catage" placeholder="7"></label>
+          </fieldset>
+          <fieldset>
+            <label><input type="radio" name="catradio" value="losingweight" checked>Похудение</label>
+            <label><input type="radio" name="catradio" value="weightgain">Набор веса</label>
+            <label><input type="radio" name="catradio" value="nothing">Не знаю (нужен ваш совет)</label>
+          </fieldset>
+          <fieldset>
+            <p>Контактные данные (владельца кота)</p>
+            <label>E-mail:*<input type="text" name="emailuser" placeholder="kuklachev@gmail.com" required></label>
+            <label>Телефон:*<input type="tel" name="teluser" placeholder="8 (960) 900-60-90" required></label>
+          </fieldset>
+          <fieldset>
+            <p>Комментарий</p>
+            <label id="comment">
+              <textarea id="comment" name="comment" placeholder="Расскажите о всех поводках кота" rows="8"></textarea>
+            </label>
+          </fieldset>
+          <fieldset>
+            <p>Дополнительно</p>
+            <label><input type="checkbox" name="sweetener" checked>Сахорозаменитель</label>
+            <label><input type="checkbox" name="Water">Питьевая вода</label>
+             <label><input type="checkbox" name="Milk">Молоко</label>
+             <label><input type="checkbox" name="Vitamins">Витамины</label>
+          </fieldset>
+          <input type="submit" value="Отправить заявку">
+          <p>* - обязательные поля формы</p>
+        </form>
+      </section>
+    </main>
+    <foooter>
+      <section>
+        <h2>Приглашаем к сотрудничеству дилеров!</h2>
+        <img src="#">
+      </section>
+      <img src="#">
+      <ul>
+        <li>ВКонтакте</li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+      </ul>
+      <p>HTML Academy</p>
+      <img src="#">
+    </foooter>
+  </body>
+</html>
