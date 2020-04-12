@@ -3,23 +3,25 @@
   <head>
     <meta charset="utf-8"/>
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
   </head>
   <body>
     <header class="page-header">
         <h1 class="page-header__h1">Функциональное питание для котов</h1>
         <p class="page-header__text">Занялся собой? Займись котом!</p>
-        <img class="page-header__banner" src="#"/>
+        <img class="page-header__food" src="#" width="280" height="275"/>
         <img class="page-header__logo" scr="#"/>
         <ul class="page-header__list list-menu">
-          <li class="list-menu__item"><a href="#">Главная</a></li>
-          <li class="list-menu__item"><a href="catalog.html">Каталог продукции</a></li>
-         <li class="list-menu__item"><a href="form.html">Подбор программы</a></li>
+          <li class="list-menu__item"><a class="list-menu__link" href="#">Главная</a></li>
+          <li class="list-menu__item"><a class="list-menu__link" href="catalog.html">Каталог продукции</a></li>
+         <li class="list-menu__item"><a class="list-menu__link" href="form.html">Подбор программы</a></li>
         </ul>
         <a class="page-header__link" href="form.html">Подобрать программу</a>
     </header>
     <main>
       <section class="program">
-          <h2>Виды программ</h2>
+          <h2 class="visually-hidden">Виды программ</h2>
           <div class="program__weight weight">
             <h3>Похудение</h3>
             <p class="weight__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -43,24 +45,26 @@
       <section class="example">
           <h2>Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__block">
-            <h3>5 кг</h3>
-            <p>Снижение веса</p>
+          <div class="example__block block">
+            <h3 class="block__heading">5 кг</h3>
+            <p class="block__content">Снижение веса</p>
           </div>
           <div class="example__block">
-            <h3>60 дней</h3>
-            <p>Затрачено времени</p>
+            <h3 class="block__heading">60 дней</h3>
+            <p class="block__content">Затрачено времени</p>
           </div>
           <p class="example__text">Затраты напитание: 15 000 рублей</p>
       </section>
       <section class="map">
         <h2>Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <img src="#"/>
       </section>
     </main>
     <foooter class="page-footer">
+      <div class="page-footer__wrapper">
         <img class="page-footer__logo" src="#"/>
-        <ul class="page-footer_social list-social">
+        <ul class="page-footer__social list-social">
           <li class="list-social__item">ВКонтакте</li>
           <li class="list-social__item">Instagram</li>
           <li class="list-social__item">Facebook</li>
@@ -69,6 +73,7 @@
           <p class="copyright_text">HTML Academy</p>
           <img class="copyright_icon" src="#"/>
         </div>
+      </div>
     </foooter>
   </body>
 </html>
