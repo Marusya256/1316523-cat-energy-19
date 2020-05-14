@@ -1,5 +1,164 @@
+.page-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  min-width: 320px;
+  position: relative;
+}
+
+.page-footer__wrapper {
+  max-width: 320px;
+}
+
+.page-footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.page-footer__logo {
+  padding: 39px 76px;
+  margin: 0 20px;
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.list-social {
+  position: relative;
+  display: flex;
+  list-style: none;
+  padding: 24px 0;
+  min-height: 19px;
+  margin: 0 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.list-social__vk::after {
+  content: url(../img/icon-vk.svg);
+  position: absolute;
+  width: 23px;
+  height: 15px;
+  left: 76px;
+}
+
+.list-social__ins::after {
+  content: url(../img/icon-insta.svg);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 136px;
+}
+
+.list-social__fb::after {
+  content: url(../img/icon-fb.svg);
+  position: absolute;
+  width: 10px;
+  height: 19px;
+  left: 192px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+
 .copyright_text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   color: #444444;
 }
+
+.copyright__logo {
+  polygon {
+    fill: #666666;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-footer{
+    min-width: 768px;
+    min-height: 150px;
+  }
+
+  .page-footer__wrapper {
+    max-width: 768px;
+  }
+
+  .page-footer__list {
+    width: 768px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    padding: 39px 76px;
+    padding-left: 0;
+    margin: 20px 30px;
+    margin-right: 20px;
+    position: relative;
+    border: none;
+  }
+
+  .list-social {
+    position: relative;
+    display: flex;
+    list-style: none;
+    padding: 24px 14px;
+    min-height: 19px;
+    margin: 35px 70px;
+    border: none;
+    min-width: 125px;
+  }
+
+  .list-social a {
+    cursor: pointer;
+  }
+
+  .list-social__vk::after {
+    content: url(../img/icon-vk.svg);
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    left: 0px;
+  }
+
+  .list-social__ins::after {
+    content: url(../img/icon-insta.svg);
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 60px;
+  }
+
+  .list-social__fb::after {
+    content: url(../img/icon-fb.svg);
+    position: absolute;
+    width: 14px;
+    height: 28px;
+    left: 116px;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    margin: 45px 30px;
+    justify-content: space-between;
+  }
+
+  .copyright_text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+  }
+
+  .copyright__logo {
+    polygon {
+      fill: #666666;
+    }
+  }
+}
+
