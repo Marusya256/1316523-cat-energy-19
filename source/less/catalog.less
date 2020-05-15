@@ -41,6 +41,40 @@
   margin-bottom: 20px;
 }
 
+.item-catalog__img {
+  width: 140px;
+  height: 144px;
+  background-repeat: no-repeat;
+}
+
+.img__ch-sm {
+  background-image: url(../img/chicken-small-mobile@1x.jpg);
+}
+
+.img__ch-big {
+  background-image: url(../img/chicken-big-mobile@1x.jpg);
+}
+
+.img__fish-sm {
+  background-image: url(../img/fish-small-mobile@1x.jpg);
+}
+
+.img__fish-big {
+  background-image: url(../img/fish-big-mobile@1x.jpg);
+}
+
+.img__bw-sm {
+  background-image: url(../img/buckwheat-small-mobile@1x.jpg);
+}
+
+.img__bw-big {
+  background-image: url(../img/buckwheat-big-mobile@1x.jpg);
+}
+
+.img__rice-sm {
+  background-image: url(../img/rice-small-mobile@1x.jpg);
+}
+
 .item-catalog__table {
   width: 140px;
   font-family: "Arial", sans-serif;
@@ -59,6 +93,7 @@
   font-weight: normal;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: 16px;
+  color: #111111;
 }
 
 .catalog-list__item p {
@@ -101,9 +136,6 @@
 }
 
 .catalog-product__heading {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  color: #111111;
   text-transform: uppercase;
   text-align: center;
 }
@@ -126,4 +158,190 @@
   text-transform: uppercase;
   text-align: center;
   margin: 20px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  .catalog-wrapper {
+    background-color: #fff;
+  }
+
+  .catalog h1 {
+    font-size: 60px;
+    margin-left: 30px;
+    padding: 35px 0;
+    border: none;
+  }
+
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    margin-left: 0px;
+    padding: 0;
+    width: 768px;
+  }
+
+  .item-catalog {
+    border: none;
+    min-height: 208px;
+    padding: 20px 0;
+    width: 324px;
+    margin: 60px 30px;
+    height: 431px;
+    background-color: #f2f2f2;
+  }
+
+  .item-catalog:last-child {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    height: 431px;
+    width: 322px;
+  }
+
+  .item-catalog__img {
+    width: 324px;
+    height: 174px;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+  }
+
+  .item-catalog:nth-child(2n) .item-catalog__img {
+    width: 324px;
+    height: 208px;
+    background-repeat: no-repeat;
+    margin-top: -106px;
+  }
+
+  .img__ch-sm {
+    background-image: url(../img/chicken-small-tablet@1x.png);
+  }
+
+  .img__ch-big {
+    background-image: url(../img/chicken-big-tablet@1x.png);
+  }
+
+  .img__fish-sm {
+    background-image: url(../img/fish-small-tablet@1x.png);
+  }
+
+  .img__fish-big {
+    background-image: url(../img/fish-big-tablet@1x.png);
+  }
+
+  .img__bw-sm {
+    background-image: url(../img/buckwheat-small-tablet@1x.png);
+  }
+
+  .img__bw-big {
+    background-image: url(../img/buckwheat-big-tablet@1x.png);
+  }
+
+  .img__rice-sm {
+    background-image: url(../img/rice-small-tablet@1x.png);
+  }
+
+  .item-catalog__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .item-catalog__table {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  .item-catalog__table tr {
+    min-height: 61px;
+  }
+
+  .item-catalog__table td {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    min-height: 61px;
+  }
+
+  .item-catalog__text {
+
+  }
+
+  .catalog-list__item h3 {
+    font-style: 20px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 131px;
+    margin: 30px 70px;
+    text-transform: uppercase;
+  }
+
+  .catalog-list__item p {
+    font-size: 16px;
+  }
+
+  .item-catalog__link-button {
+    padding: 13px 98px;
+    font-size: 16px;
+    margin: 30px;
+    margin-left: 38px;
+  }
+
+  .catalog-product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-product__plus {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 26px;
+    margin-left: 145px;
+  }
+
+  .catalog-product-plus::after {
+    content: "";
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    background-color: blue;
+    top: 20px;
+  }
+
+  .catalog-product__heading {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    margin-left: 195px;
+  }
+
+  .catalog-product__text {
+    font-size: 16px;
+    width: 173px;
+    margin-bottom: 89px;
+    margin-left: 78px;
+  }
+
+  .catalog-product__link {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    background-color: #f2f2f2;
+    padding: 12px 93px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+  }
 }

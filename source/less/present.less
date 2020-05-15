@@ -9,7 +9,7 @@
 
 .present__wrapper {
   background-color: #68b738;
-  min-height: 289px;
+  height: 289px;
   width: 280px;
   background-image: url(../img/gift-photo-mobile@1x.jpg);
   position: relative;
@@ -33,4 +33,45 @@
   text-align: center;
   width: 165px;
   margin: 188px 60px 43px 56px;
+}
+
+@media (min-width: @tablet-width) {
+  .present {
+    display: flex;
+    flex-direction: column;
+    min-width: 768px;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 200px;
+    margin-bottom: 76px;
+  }
+
+  .present__wrapper {
+    background-color: #68b738;
+    height: 200px;
+    width: 708px;
+    background-image: url(../img/gift-photo-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .present__icon {
+    width: 57px;
+    height: 60px;
+    position: absolute;
+    top: 65px;
+    left: 90px;
+    polygon {
+      fill: #ffffff;
+    }
+  }
+
+  .present__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    width: 165px;
+    margin: 75px 124px 70px 421px;
+  }
 }

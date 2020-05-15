@@ -27,10 +27,10 @@
           <ul class="catalog-list">
             <li class="catalog-list__item item-catalog">
               <div class="item-catalog__info">
-                <a><img src="../img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Вкус курицы большая банка"/></a>
+                <a><div class="item-catalog__img img__ch-sm"></div></a>
                 <div class="item-catalog__text">
                 <a class="item-catalog__link" href="#">
-                  <h3>Cat Energy<br>Pro 500г</h3>
+                  <h3>Cat Energy Pro 500г</h3>
                 </a>
                 <table class="item-catalog__table">
                   <tr>
@@ -52,10 +52,10 @@
             </li>
             <li class="catalog-list__item item-catalog">
               <div class="item-catalog__info">
-                <a><img src="../img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Вкус курицы большая банка"/></a>
+                <a><div class="item-catalog__img img__ch-big"></div></a>
                 <div class="item-catalog__text">
                 <a class="item-catalog__link" href="#">
-                  <h3>Cat Energy<br>Pro 1000г</h3>
+                  <h3>Cat Energy Pro 1000г</h3>
                 </a>
                 <table class="item-catalog__table">
                   <tr>
@@ -77,10 +77,10 @@
             </li>
             <li class="catalog-list__item item-catalog">
               <div class="item-catalog__info">
-                <a><img src="../img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Вкус курицы большая банка"/></a>
+                <a><div class="item-catalog__img img__fish-sm"></div></a>
                 <div class="item-catalog__text">
                 <a class="item-catalog__link" href="#">
-                  <h3>Cat Energy<br>Pro 500г</h3>
+                  <h3>Cat Energy Pro 500г</h3>
                 </a>
                 <table class="item-catalog__table">
                   <tr>
@@ -102,10 +102,10 @@
             </li>
             <li class="catalog-list__item item-catalog">
               <div class="item-catalog__info">
-                <a><img src="../img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Вкус курицы большая банка"/></a>
+                <a><div class="item-catalog__img img__fish-big"></div></a>
                 <div class="item-catalog__text">
                 <a class="item-catalog__link" href="#">
-                  <h3>Cat Energy<br>Pro 1000г</h3>
+                  <h3>Cat Energy Pro 1000г</h3>
                 </a>
                 <table class="item-catalog__table">
                   <tr>
@@ -127,10 +127,10 @@
             </li>
             <li class="catalog-list__item item-catalog">
               <div class="item-catalog__info">
-                <a><img src="../img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Вкус курицы большая банка"/></a>
+                <a><div class="item-catalog__img img__bw-sm"></div></a>
                 <div class="item-catalog__text">
                 <a class="item-catalog__link" href="#">
-                  <h3>Cat Energy<br>Slim 500г</h3>
+                  <h3>Cat Energy Slim 500г</h3>
                 </a>
                 <table class="item-catalog__table">
                   <tr>
@@ -152,10 +152,10 @@
             </li>
             <li class="catalog-list__item item-catalog">
               <div class="item-catalog__info">
-                <a><img src="../img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Вкус курицы большая банка"/></a>
+                <a><div class="item-catalog__img img__bw-big"></div></a>
                 <div class="item-catalog__text">
                 <a class="item-catalog__link" href="#">
-                  <h3>Cat Energy<br>Slim 1000г</h3>
+                  <h3>Cat Energy Slim 1000г</h3>
                 </a>
                 <table class="item-catalog__table">
                   <tr>
@@ -177,10 +177,10 @@
             </li>
             <li class="catalog-list__item item-catalog">
               <div class="item-catalog__info">
-                <a><img src="../img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Вкус курицы большая банка"/></a>
+                <a><div class="item-catalog__img img__rice-sm"></div></a>
                 <div class="item-catalog__text">
                 <a class="item-catalog__link" href="#">
-                  <h3>Cat Energy<br>Slim 500г</h3>
+                  <h3>Cat Energy Slim 500г</h3>
                 </a>
                 <table class="item-catalog__table">
                   <tr>
@@ -200,13 +200,15 @@
               </div>
               <a class="item-catalog__link-button">Заказать</a>
             </li>
+            <li class="catalog-list__item item-catalog">
+              <div class="catalog-product">
+                <div class="catalog-product__plus"></div>
+                <h3 class="catalog-product__heading">Показать еще 100500 товаров</h3>
+                <p class="catalog-product__text">На самом деле вкусов гораздо больше!</p>
+                <a class="catalog-product__link" href="#">Показать все</a>
+              </div>
+            </li>
           </ul>
-          <div class="catalog-product">
-            <div class="catalog-product__plus"></div>
-            <p class="catalog-product__heading">Показать еще 100500 товаров</p>
-            <p class="catalog-product__text">На самом деле вкусов гораздо больше!</p>
-            <a class="catalog-product__link" href="#">Показать все</a>
-          </div>
         </div>
       </section>
       <section class="additional-product">
@@ -214,23 +216,31 @@
           <h2>Дополнительные товары</h2>
           <ul class="additional-product__list list-product">
             <li class="list-product__item">
+              <div class="list-product__item--p">
               <p class="list-product__heading">Сахорозаменитель</p>
               <p class="list-product__text">1 упаковка (100г) 200 Р.</p>
+              </div>
               <a class="list-product__link" href="#">Заказать</a>
             </li>
             <li class="list-product__item">
+              <div class="list-product__item--p">
               <p class="list-product__heading">Питьевая вода</p>
               <p class="list-product__text">5 литров 50 Р.</p>
+              </div>
               <a class="list-product__link" href="#">Заказать</a>
            </li>
            <li class="list-product__item">
+            <div class="list-product__item--p">
               <p class="list-product__heading">Молоко</p>
               <p class="list-product__text">1 литр 100 Р.</p>
+            </div>
               <a class="list-product__link" href="#">Заказать</a>
             </li>
             <li class="list-product__item">
+              <div class="list-product__item--p">
               <p class="list-product__heading">Витамины</p>
               <p class="list-product__text">1 упаковка (30г) 300 Р.</p>
+              </div>
               <a class="list-product__link" href="#">Заказать</a>
             </li>
           </ul>
@@ -254,7 +264,7 @@
         </div>
       </section>
       <section class="map">
-        <div class="map__wrapper">
+        <div class="map__wrapper wrapper--grey">
            <h2>Приглашаем<br>к сотрудничеству дилеров!</h2>
            <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
