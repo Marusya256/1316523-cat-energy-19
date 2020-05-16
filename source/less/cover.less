@@ -10,6 +10,8 @@
   background-repeat: no-repeat;
   width: 320px;
   background-color: #fff;
+  position: relative;
+  min-height: 510px;
 }
 
 .cover__h1 {
@@ -41,6 +43,8 @@
   color: white;
   padding: 13px 65px;
   margin-left: 20px;
+  position: absolute;
+  top: 450px;
 }
 
 .cover__food {
@@ -85,9 +89,9 @@
   .cover__link {
     position: absolute;
     font-size: 20px;
-    padding: 16px 26px;
+    padding: 10px 20px;
     margin-left: 120px;
-    bottom: 520px;
+    top: 290px;
   }
 
   .cover__food {
@@ -98,3 +102,57 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .cover {
+    display: flex;
+    flex-direction: column;
+    min-width: 1440px;
+    align-items: center;
+  }
+
+  .cover__wrapper {
+    position: relative;
+    background-image: none;
+    width: 1440px;
+    background-color: #fff;
+    display: flex;
+    min-height: 586px;
+  }
+
+  .cover_bg-dekstop {
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 696px;
+    position: absolute;
+    right: 0;
+    top: -110px;
+  }
+
+  .cover__h1 {
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    color: #000000;
+    text-align: left;
+    margin-left: 120px;
+  }
+
+  .cover__text {
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+    margin-left: 120px;
+  }
+
+  .cover__food {
+    background-image: url(../img/index-can-desktop@1x.png);
+    width: 540px;
+    height: 485px;
+    margin-left: 25px;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+}
+

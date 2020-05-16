@@ -8,7 +8,7 @@
 
 .map__wrapper {
   display: flex;
-  max-width: 320px;
+  width: 320px;
   justify-content: space-between;
 }
 
@@ -44,7 +44,7 @@
   }
 
   .map__wrapper {
-    min-width: 768px;
+    width: 768px;
     background-color: #fff;
   }
 
@@ -74,3 +74,45 @@
    }
  }
 
+ @media (min-width: @desktop-width) {
+  .map {
+    width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    height: 400px;
+  }
+
+  .map__wrapper {
+    width: 570px;
+    height: 201px;
+    background-color: #fff;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+  }
+
+  .wrapper--grey {
+    background-color: #fff;
+  }
+
+  .map h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 66px 51px 63px 75px;
+    width: 160px;
+   }
+
+   .map__text {
+     font-size: 16px;
+     line-height: 22px;
+     color: #444444;
+     margin: 66px 90px 63px 40px;
+     width: 155px;
+   }
+
+   .map__img {
+     background-image: url(../img/bg-map-desktop@1x.png);
+     width: 1440px;
+     height: 400px;
+   }
+ }
