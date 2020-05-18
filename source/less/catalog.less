@@ -113,6 +113,15 @@
   margin-left: 20px;
 }
 
+.item-catalog__link-button:hover {
+  background-color: #5eaa2f;
+}
+
+.item-catalog__link-button:active {
+  color: #8fc46e;
+  background-color: #5eaa2f;
+}
+
 .catalog-product {
   display: flex;
   flex-direction: column;
@@ -159,7 +168,19 @@
   text-transform: uppercase;
   text-align: center;
   margin: 20px;
+  cursor: pointer;
 }
+
+.catalog-product__link:hover {
+  background-color: #ebebeb;
+}
+
+.catalog-product__link:active {
+  background-color: #ebebeb;
+  opacity: 0.3;
+}
+
+
 
 
 @media (min-width: @tablet-width) {

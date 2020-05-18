@@ -12,7 +12,7 @@
     <header class="page-header nav--opened">
       <div class="page-header__wrapper nav--nojs">
         <div class="page-header__nav nav">
-          <div class="nav__logo"></div>
+          <a href="index.html" class="nav__link-logo"><div class="nav__logo"></div></a>
           <button type="button" class="nav__button">Меню</button>
         </div>
         <ul class="page-header__list list-menu menu-desktop">
@@ -28,38 +28,46 @@
           <h1 class="profile__heading">Подбор программы</h1>
           <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="profile__form form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <fieldset class="form__info-cat">
-              <label>Имя:*<input type="text" name="catname" placeholder="Барсик" required></label><br>
-              <label>Вес (кг):*<input type="number" name="catweight" placeholder="7" required></label><br>
-              <label>Возраст (лет):<input type="number" name="catage" placeholder="7"></label>
+            <div class="form__fieldset-info">
+            <fieldset class="form__info-cat info-cat">
+              <label class="info-cat__name">Имя:*<input type="text" name="catname" placeholder="Барсик" required></label><br>
+              <label class="info-cat__weight">Вес (кг):*<input type="number" name="catweight" placeholder="7" required></label><br>
+              <label class="info-cat__age">Возраст (лет):<input type="number" name="catage" placeholder="7"></label>
             </fieldset>
             <fieldset class="form__weight">
               <ul>
-                <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="losingweight" checked class="visually-hidden"><span class="checkbox-radio">Похудение</span></label></li><br>
-                <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="weightgain" class="visually-hidden"><span class="checkbox-radio">Набор веса</span></label></li><br>
-                <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="nothing" class="visually-hidden"><span class="checkbox-radio">Не знаю (нужен ваш совет)</span></label></li>
+                <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="losingweight" checked class="visually-hidden"><span class="checkbox-radio"></span>Похудение</label></li><br>
+                <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="weightgain" class="visually-hidden"><span class="checkbox-radio"></span>Набор веса</label></li><br>
+                <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="nothing" class="visually-hidden"><span class="checkbox-radio"></span>Не знаю (нужен ваш совет)</label></li>
               </ul>
             </fieldset>
-            <fieldset class="form__owner">
-              <p class="form__p"></p>Контактные данные (владельца кота)</p>
+            </div>
+            <fieldset class="form__owner owner">
+              <legend class="form__legend legend__data"></p>Контактные данные (владельца кота)</legend>
+              <div class="owner__label">
               <label>E-mail:*<input type="text" name="emailuser" placeholder="kuklachev@gmail.com" required></label><br>
               <label>Телефон:*<input type="tel" name="teluser" placeholder="8 (960) 900-60-90" required></label>
+              </div>
             </fieldset>
             <fieldset class="form__comment">
-              <p class="form__p"></p>Комментарий</p>
+              <legend class="form__legend legend__comment">Комментарий</legend>
               <label>
                 <textarea name="comment" placeholder="Расскажите о всех поводках кота" rows="8"></textarea>
               </label>
             </fieldset>
             <fieldset class="form__additional">
-              <p class="form__p">Дополнительно</p>
-              <label><input type="checkbox" class="form__additional-checkbox" name="sweetener" checked><span class="checkbox-indicator">Сахорозаменитель</span></label><br>
-              <label><input type="checkbox" class="form__additional-checkbox" name="Water"><span class="checkbox-indicator">Питьевая вода</span></label><br>
-              <label><input type="checkbox" class="form__additional-checkbox" name="Milk"><span class="checkbox-indicator">Молоко</span></label><br>
-              <label><input type="checkbox" class="form__additional-checkbox" name="Vitamins"><span class="checkbox-indicator">Витамины</span></label>
+              <legend class="form__legend legend__add">Дополнительно</legend>
+              <ul class="form__additional__list-check">
+                  <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="sweetener" checked><span class="checkbox-indicator"></span>Сахорозаменитель</label><br></li>
+                  <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="Water"><span class="checkbox-indicator"></span>Питьевая вода</label><br></li>
+                  <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="Milk"><span class="checkbox-indicator"></span>Молоко</label><br></li>
+                  <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="Vitamins"><span class="checkbox-indicator"></span>Витамины</label></li>
+              </ul>
             </fieldset>
+            <div class="form__button-text">
             <input class="form__button" type="submit" value="Отправить заявку">
             <p class="form__text">* - обязательные поля формы</p>
+            </div>
           </form>
           </div>
       </section>
@@ -74,7 +82,7 @@
     <foooter class="page-footer">
       <div class="page-footer__wrapper">
         <ul class="page-footer__list">
-        <li><img class="page-footer__logo" src="../img/logo-footer.svg" alt="Логотип компании" width="128" height="24"/></li>
+          <li><a href="index.html" class="page-footer__logo-link"><img class="page-footer__logo" src="../img/logo-footer.svg" alt="Логотип компании" width="128" height="24"/></a></li>
         <li><ul class="page-footer__social list-social">
           <li><a href="#" class="list-social__vk"></a></li>
           <li><a href="#" class="list-social__ins"></a></li>

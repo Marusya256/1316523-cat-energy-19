@@ -25,6 +25,14 @@
   background-repeat: no-repeat;
 }
 
+.nav__link-logo .nav__logo:hover {
+  opacity: 0.8;
+}
+
+.nav__link-logo .nav__logo:active {
+  opacity: 0.6;
+}
+
 .nav--opened .list-menu {
   list-style: none;
   display: flex;
@@ -107,6 +115,14 @@
   color: #000000;
   padding: 0;
   margin: 0;
+}
+
+.list-menu__link:not(.list-menu__item--activ):hover {
+  opacity: 0.6;
+}
+
+.list-menu__link:not(.list-menu__item--activ):active {
+  opacity: 0.3;
 }
 
 .link-off {
