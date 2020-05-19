@@ -5,6 +5,7 @@
   background-color: #f2f2f2;
   min-width: 320px;
   position: relative;
+  height: 236px;
 }
 
 .page-footer__wrapper {
@@ -19,7 +20,7 @@
 
 
 .page-footer__logo {
-  padding: 39px 76px;
+  padding: 39px 76px 31px 76px;
   margin: 0 20px;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
@@ -29,7 +30,7 @@
   position: relative;
   display: flex;
   list-style: none;
-  padding: 24px 0;
+  padding: 20px 0;
   min-height: 19px;
   margin: 0 20px;
   border-bottom: 1px solid #d9d9d9;
@@ -40,7 +41,7 @@
   position: absolute;
   width: 23px;
   height: 15px;
-  left: 76px;
+  left: 72px;
 }
 
 .list-social__ins::after {
@@ -48,7 +49,7 @@
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 136px;
+  left: 132px;
 }
 
 .list-social__fb::after {
@@ -56,13 +57,16 @@
   position: absolute;
   width: 10px;
   height: 19px;
-  left: 192px;
+  left: 188px;
+  top: 18px;
 }
 
 .page-footer__copyright {
   display: flex;
   margin: 0 20px;
   justify-content: space-between;
+  padding: 12px 0;
+  position: relative;
 }
 
 .copyright_text {
@@ -72,6 +76,9 @@
 }
 
 .copyright__logo {
+  position: absolute;
+  top: 18px;
+  right: -6px;
   polygon {
     fill: #666666;
   }
@@ -89,6 +96,7 @@
   .page-footer{
     min-width: 768px;
     min-height: 150px;
+    height: 150px;
   }
 
   .page-footer__wrapper {
@@ -96,17 +104,18 @@
   }
 
   .page-footer__list {
-    width: 768px;
+    width: 708px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
   }
 
   .page-footer__logo {
     padding: 39px 76px;
     padding-left: 0;
-    margin: 20px 30px;
+    margin: 20px 0px;
     margin-right: 20px;
+    margin-top: 25px;
     position: relative;
     border: none;
   }
@@ -118,6 +127,8 @@
     padding: 24px 14px;
     min-height: 19px;
     margin: 35px 70px;
+    margin-left: 25px;
+    margin-top: 40px;
     border: none;
     min-width: 125px;
   }
@@ -132,6 +143,7 @@
     width: 30px;
     height: 16px;
     left: 0px;
+    top: 26px;
   }
 
   .list-social__ins::after {
@@ -139,7 +151,8 @@
     position: absolute;
     width: 23px;
     height: 23px;
-    left: 60px;
+    left: 58px;
+    top: 23px;
   }
 
   .list-social__fb::after {
@@ -147,13 +160,18 @@
     position: absolute;
     width: 14px;
     height: 28px;
-    left: 116px;
+    left: 110px;
+    top: 21px;
   }
 
   .page-footer__copyright {
     display: flex;
-    margin: 45px 30px;
+    margin: 45px 0px;
+    margin-top: 50px;
+    padding: 0px;
+    padding-right: 50px;
     justify-content: space-between;
+    position: relative;
   }
 
   .copyright_text {
@@ -163,6 +181,8 @@
   }
 
   .copyright__logo {
+    position: absolute;
+    top: 5px;
     polygon {
       fill: #666666;
     }

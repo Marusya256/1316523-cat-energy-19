@@ -5,6 +5,7 @@
   margin: 0 auto;
   background-color: #fff;
   align-items: center;
+  min-height: 447px;
 }
 
 .advantages h2 {
@@ -19,39 +20,49 @@
 .list-page {
   list-style: none;
   padding: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
   color: #444444;
   max-width: 280px;
   margin: 0;
+  margin-top: 35px;
 }
 
 .list-page__item {
-  padding-left: 59px;
-  margin: 10px 0px;
+  padding-left: 79px;
+  margin: 25px 0px;
   position: relative;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .list-page__item::before {
-  content: url(../img/advantage-leaf@1x.png);
-  width: 50px;
-  height: 50px;
+  content: "";
+  width: 60px;
+  height: 60px;
   background-color: #68b738;
+  background-image: url(../img/advantage-leaf@1x.png);
+  background-position: 50% 50%;
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -2px;
 }
 
 .item--powder::before {
-  content: url(../img/advantage-powder@1x.png);
+  content: "";
+  background-image: url(../img/advantage-powder@1x.png);
+  background-position: 50% 50%;
 }
 
 .item--dining::before {
-  content: url(../img/advantage-dining@1x.png);
+  content: "";
+  background-image: url(../img/advantage-dining@1x.png);
+  background-position: 50% 50%;
 }
 
 .item--clock::before {
-  content: url(../img/advantage-clock@1x.png);
+  content: "";
+  background-image: url(../img/advantage-clock@1x.png);
+  background-position: 50% 50%;
 }
 
 .item--namber {
@@ -74,24 +85,36 @@
   .advantages h2 {
     font-size: 60px;
     margin: 30px;
+    margin-top: 28px;
   }
 
   .list-page {
-    font-size: 16px;
     min-width: 708px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-top: 57px;
   }
 
   .list-page__item {
+    font-size: 16px;
+    line-height: 24px;
     padding-left: 0;
-    padding-top: 123px;
-    margin: 10px 10px;
+    padding-top: 114px;
+    margin: 0px 10px;
     position: relative;
-    width: 240px;
     height: 320px;
     box-sizing: border-box;
+    width: 245px;
+    max-height: 302px;
+  }
+
+  .item--leaf {
+    width: 230px;
+  }
+
+  .item--clock {
+    width: 245px;
   }
 
   .list-page__item:nth-child(2n+1) {
@@ -107,7 +130,7 @@
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 281.07px;
     position: absolute;
-    right: 0;
+    right: -5px;
     top: 0;
     padding: 0;
     margin: 0;
@@ -157,13 +180,13 @@
   .advantages__wrapper {
     width: 1440px;
     margin-left: 110px;
-    margin-top: 79px;
+    margin-top: 61px;
   }
 
   .advantages h2 {
     font-size: 60px;
     margin: 0px;
-    margin-bottom: 67px;
+    margin-bottom: 57px;
   }
 
   .list-page {
@@ -172,11 +195,12 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 0px;
+    margin-top: 0px;
   }
 
   .list-page__item {
-    padding-left: 0;
-    padding-top: 123px;
+    padding-left: 0px;
+    padding-top: 113px;
     margin: 0px;
     margin-right: 80px;
     position: relative;
@@ -202,7 +226,7 @@
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 281.07px;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
     padding: 0;
     margin: 0;
