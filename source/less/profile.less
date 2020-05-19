@@ -1,0 +1,858 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.profile__wrapper {
+  background-color: #fff;
+  width: 320px;
+  position: relative;
+}
+
+.profile__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  color: #000000;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.profile__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-left: 20px;
+  width: 228px;
+}
+
+.profile__form fieldset {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  border: none;
+  margin: 0;
+  padding: 20px 0;
+  position: relative;
+  width: 320px;
+}
+
+.form__legend {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: none;
+  margin-left: 20px;
+  max-width: 186px;
+}
+
+.form__legend::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 3px;
+  background-color: #68b738;
+  right: 0;
+  top: 0;
+}
+
+.legend__data::after {
+  top: 37px;
+}
+
+.legend__comment::after {
+  width: 158px;
+  top: 13px;
+}
+
+.legend__add::after {
+  width: 136px;
+  top: 13px;
+}
+
+.form__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  border: none;
+  padding: 14px 79px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #5eaa2f;
+}
+
+.form__button:active {
+  color: #8fc46e;
+  background-color: #5eaa2f;
+}
+
+
+.form__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #444444;
+  text-transform: none;
+  text-align: center;
+}
+
+.info-cat label {
+  margin-left: 20px;
+}
+
+.form__weight label {
+  margin-left: 20px;
+}
+
+.form__owner label {
+  margin-left: 20px;
+}
+
+.form__comment label {
+  margin-left: 20px;
+}
+
+.form__additional label {
+  margin-left: 20px;
+}
+
+.form__info-cat input[type="text"],
+.form__info-cat input[type="number"] {
+  margin: 7px 0px 7px 10px;
+  border: 1px solid #cfcfcf;
+  height: 45px;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.info-cat__name input[type="text"] {
+  width: 215px;
+}
+
+.info-cat__weight input[type="number"] {
+  width: 192px;
+}
+
+.info-cat__age input[type="number"] {
+  width: 157px;
+}
+
+.form__owner input[type="text"],
+.form__owner input[type="tel"] {
+  margin: 7px 0px 7px 10px;
+  border: 1px solid #cfcfcf;
+  height: 44px;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.form__owner input[type="text"] {
+  width: 207px;
+}
+
+.form__owner input[type="tel"] {
+  width: 190px;
+}
+
+.form__weight ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  padding: 20px 0;
+}
+
+.form__additional__list-check {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__additional__list-check li {
+  padding: 0;
+  margin: 15px 0;
+}
+
+.form__comment textarea {
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  width: 264px;
+  border: 1px solid #ededed;
+  min-height: 148px;
+  padding-left: 14px;
+  padding-top: 14px;
+}
+
+.form__weight-checkbox {
+  position: relative;
+  cursor: pointer;
+  padding-left: 40px;
+}
+
+.form__weight-checkbox input[type="radio"] + .checkbox-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cfcfcf;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__weight-checkbox input[type="radio"]:checked + .checkbox-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/radiobutton-2.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__additional-checkbox {
+  position: relative;
+  cursor: pointer;
+  padding-left: 40px;
+}
+
+.form__additional-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 29px;
+  height: 29px;
+  border: 1px solid #cfcfcf;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__additional-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 29px;
+  height: 29px;
+  border: 1px solid #cfcfcf;
+  background-image: url(../img/tick.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__weight-checkbox:active,
+.form__additional-checkbox:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  .profile__wrapper {
+    background-color: #fff;
+    width: 768px;
+    position: relative;
+    margin-bottom: 70px;
+  }
+
+  .profile__heading {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    color: #000000;
+    font-weight: normal;
+    margin-left: 30px;
+  }
+
+  .profile__text {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-left: 70px;
+    width: 330px;
+  }
+
+  .profile__form fieldset {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    border: none;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+    width: 768px;
+  }
+
+  .form__legend {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: none;
+    margin-left: 70px;
+    max-width: 525px;
+  }
+
+  .form__legend::after {
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 3px;
+    background-color: #68b738;
+    right: 0;
+    top: 0;
+  }
+
+  .form__legend::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+    left: 0;
+    top: 0;
+  }
+
+  .legend__comment::after {
+    width: 479px;
+  }
+
+  .legend__add::after {
+    width: 446px;
+  }
+
+  .legend__data::after,
+  .legend__data::before {
+    top: 57px;
+  }
+
+  .legend__comment::after,
+  .legend__comment::before {
+    top: 23px;
+  }
+
+  .legend__add::after,
+  .legend__add::before {
+    top: 23px;
+  }
+
+  .form__button-text {
+    display: flex;
+  }
+
+  .form__button {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #68b738;
+    border: none;
+    padding: 14px 79px;
+    margin-left: 70px;
+  }
+
+  .form__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-transform: none;
+    text-align: center;
+    margin-left: 60px;
+    width: 250px;
+  }
+
+  .info-cat label {
+    margin-left: 70px;
+  }
+
+  .form__weight label {
+    margin-left: 30px;
+  }
+
+  .form__owner label {
+    margin-left: 70px;
+  }
+
+  .form__comment label {
+    margin-left: 70px;
+  }
+
+  .form__additional label {
+    margin-left: 30px;
+  }
+
+  .form__info-cat input[type="text"],
+  .form__info-cat input[type="number"] {
+    margin: 7px 0px 7px 10px;
+    border: 1px solid #cfcfcf;
+    height: 45px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
+
+  .info-cat__name input[type="text"] {
+    width: 564px;
+  }
+
+  .info-cat__weight input[type="number"] {
+    width: 535px;
+  }
+
+  .info-cat__age input[type="number"] {
+    width: 495px;
+  }
+
+  .form__owner input[type="text"],
+  .form__owner input[type="tel"] {
+    margin: 7px 0px 7px 10px;
+    border: 1px solid #cfcfcf;
+    height: 44px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
+
+  .form__owner input[type="text"] {
+    width: 549px;
+  }
+
+  .form__owner input[type="tel"] {
+    width: 530px;
+  }
+
+  .form__weight ul {
+    list-style: none;
+    margin: 0;
+    border: 1px solid #ededed;
+    padding: 20px 0;
+    width: 628px;
+    min-height: 195px;
+    margin-left: 70px;
+  }
+
+  .form__weight li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__additional__list-check {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__additional__list-check li {
+    padding: 0;
+    margin: 25px 30px 25px 40px;
+    width: 284px;
+  }
+
+  .form__comment textarea {
+    font-size: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    width: 629px;
+    border: 1px solid #ededed;
+    min-height: 148px;
+    padding-left: 14px;
+    padding-top: 14px;
+  }
+
+  .form__weight-checkbox {
+    position: relative;
+    cursor: pointer;
+    padding-left: 60px;
+  }
+
+  .form__weight-checkbox input[type="radio"] + .checkbox-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form__weight-checkbox input[type="radio"]:checked + .checkbox-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/radiobutton-2.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form__additional-checkbox {
+    position: relative;
+    cursor: pointer;
+    padding-left: 60px;
+  }
+
+  .form__additional-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #cfcfcf;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form__additional-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #cfcfcf;
+    background-image: url(../img/tick.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .profile__wrapper {
+    background-color: #fff;
+    width: 1440px;
+    position: relative;
+    margin-bottom: 70px;
+  }
+
+  .profile__heading {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    color: #000000;
+    font-weight: normal;
+    margin-left: 110px;
+  }
+
+  .profile__text {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-left: 110px;
+    width: 330px;
+  }
+
+  .profile__form fieldset {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    border: none;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+    width: 1440px;
+  }
+
+  .form__legend {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: none;
+    margin-left: 110px;
+    max-width: 525px;
+  }
+
+  .form__legend::after {
+    content: "";
+    position: absolute;
+    width: 777px;
+    height: 3px;
+    background-color: #68b738;
+    right: 0;
+    top: 0;
+  }
+
+  .form__legend::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: #68b738;
+    left: 0;
+    top: 0;
+  }
+
+  .legend__comment::after {
+    width: 1111px;
+  }
+
+  .legend__add::after {
+    width: 1078px;
+  }
+
+  .legend__data::after,
+  .legend__data::before {
+    top: 57px;
+  }
+
+  .legend__comment::after,
+  .legend__comment::before {
+    top: 23px;
+  }
+
+  .legend__add::after,
+  .legend__add::before {
+    top: 23px;
+  }
+
+  .info-cat {
+    margin: 0 40px;
+  }
+
+  .form__button-text {
+    display: flex;
+  }
+
+  .form__button {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #68b738;
+    border: none;
+    padding: 14px 208px;
+    margin-left: 70px;
+  }
+
+  .form__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-transform: none;
+    text-align: center;
+    margin-left: 60px;
+    width: 250px;
+  }
+
+  .form__fieldset-info {
+    display: flex;
+    width: 1440px;
+  }
+
+  .info-cat label {
+    margin: 0 40px;
+  }
+
+  .form__weight label {
+    margin-left: 70px;
+  }
+
+  .form__owner label {
+    margin: 0 40px;
+  }
+
+  .form__comment label {
+    margin-left: 110px;
+  }
+
+  .form__additional label {
+    margin-left: 30px;
+  }
+
+  .form__info-cat input[type="text"],
+  .form__info-cat input[type="number"] {
+    margin: 7px 0px 7px 10px;
+    border: 1px solid #cfcfcf;
+    height: 45px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
+
+  .info-cat__name input[type="text"] {
+    width: 504px;
+  }
+
+  .info-cat__weight input[type="number"] {
+    width: 475px;
+  }
+
+  .info-cat__age input[type="number"] {
+    width: 435px;
+  }
+
+  .owner__label {
+    display: flex;
+    width: 1220px;
+    margin: 0 70px;
+  }
+
+  .form__owner input[type="text"],
+  .form__owner input[type="tel"] {
+    margin: 7px 0px 7px 10px;
+    border: 1px solid #cfcfcf;
+    height: 44px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
+
+  .form__owner input[type="text"] {
+    width: 489px;
+  }
+
+  .form__owner input[type="tel"] {
+    width: 470px;
+  }
+
+  .form__weight ul {
+    list-style: none;
+    margin: 0;
+    border: 1px solid #ededed;
+    padding: 20px 0;
+    width: 628px;
+    min-height: 195px;
+    margin: 0 40px;
+  }
+
+  .form__weight li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__additional__list-check {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+  }
+
+  .form__additional__list-check li {
+    padding: 0;
+    margin: 25px 30px 25px 40px;
+    width: 274px;
+  }
+
+  .form__comment textarea {
+    font-size: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    width: 1218px;
+    border: 1px solid #ededed;
+    min-height: 172px;
+    padding-left: 14px;
+    padding-top: 14px;
+  }
+
+  .form__weight-checkbox {
+    position: relative;
+    cursor: pointer;
+    padding-left: 60px;
+  }
+
+  .form__weight-checkbox input[type="radio"] + .checkbox-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form__weight-checkbox input[type="radio"]:checked + .checkbox-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/radiobutton-2.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form__additional-checkbox {
+    position: relative;
+    cursor: pointer;
+    padding-left: 60px;
+  }
+
+  .form__additional-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #cfcfcf;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form__additional-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #cfcfcf;
+    background-image: url(../img/tick.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

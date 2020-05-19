@@ -1,0 +1,168 @@
+
+@bg-grey: #f2f2f2;
+@bg-green: #68b738;
+
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    min-width: 768px;
+  }
+  .logo-menu__button {
+    display: none;
+  }
+}
+
+@media (min-widht: @desktop-widht) {
+  .page-header__wrapper {
+    min-width: 1440px;
+  }
+
+  .logo-menu__button {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
+.page-header {
+  background-color: #27ad6f;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  min-width: 100%;
+}
+
+.page-header__wrapper {
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  min-width: 320px;
+}
+
+.page-header__h1 {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  max-width: 260px;
+  text-transform: none;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+
+.page-header__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-header__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+  color: white;
+  padding: 13px 70px;
+}
+
+.list-menu {
+  color: black;
+  background-color: white;
+  list-style: none;
+  text-transform: uppercase;
+}
+.list-menu__link {
+  text-decoration: none;
+  color: black;
+}
+.list-menu__item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0;
+}
+.page-header__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+  color: white;
+  padding: 13px 70px;
+}
+
+.list-menu {
+  color: black;
+  background-color: white;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.list-menu__link {
+  text-decoration: none;
+  color: black;
+}
+
+.list-menu__item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0;
+}
+
+.page-header__food {
+  background-image: url(../img/index-can-mobile@1x.png);
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 265px;
+  border: none;
+}
+
+.page-header__logo-menu {
+  background-color: blue;
+  position: relative;
+  min-width: 320px;
+  display: flex;
+}
+
+.logo-menu__logo {
+  background-image: url(../img/logo-mobile.svg);
+  background-repeat: no-repeat;
+  width: 191px;
+  height: 34px;
+  margin: 11px 65px 11px 5px;
+}
+
+.logo-menu__button {
+  width: 24px;
+  height: 18px;
+  list-style: none;
+  background-color: #fff;
+  border: none;
+  text-indent: -10000px;
+  position: relative;
+  top: 23px;
+
+}
+
+.logo-menu__button::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 6px 0 0 rgb( 0, 0, 0), 0 12px 0 0 rgb( 0, 0, 0);
+}
+
+
+
