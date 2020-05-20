@@ -51,10 +51,8 @@
 }
 
 .cover__food {
-  background-image: url(../img/index-can-mobile@1x.png);
   width: 280px;
   height: 275px;
-  background-repeat: no-repeat;
   margin-left: 20px;
 }
 
@@ -111,11 +109,9 @@
   }
 
   .cover__food {
-    background-image: url(../img/index-can-tablet@1x.jpg);
     width: 680px;
     height: 600px;
     margin-left: 29px;
-    background-repeat: no-repeat;
   }
 }
 
@@ -131,7 +127,7 @@
     position: relative;
     background-image: none;
     width: 1440px;
-    background-color: #fff;
+    background-color: rgba(250, 250, 250, 0);
     display: flex;
     min-height: 586px;
   }
@@ -145,6 +141,7 @@
     position: absolute;
     right: 0px;
     top: -140px;
+    z-index: -1;
   }
 
   .cover__h1 {
@@ -173,13 +170,11 @@
   }
 
   .cover__food {
-    background-image: url(../img/index-can-desktop@1x.png);
     width: 550px;
     height: 485px;
     margin-left: -47px;
     margin-top: 5px;
-    background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 10;
   }
 }
 

@@ -14,15 +14,16 @@
 
 .profile__heading {
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 36px;
   color: #000000;
   font-weight: normal;
-  margin-left: 20px;
+  margin: 17px 0 29px 20px;
 }
 
 .profile__text {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
+  line-height: 18px;
   color: #000000;
   text-transform: uppercase;
   margin-left: 20px;
@@ -36,7 +37,7 @@
   text-transform: uppercase;
   border: none;
   margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   position: relative;
   width: 320px;
 }
@@ -47,8 +48,20 @@
   line-height: 24px;
   color: #000000;
   text-transform: none;
-  margin-left: 20px;
+  padding-top: 19px;
+  margin: 0px 0 16px 19px;
   max-width: 186px;
+  max-height: 59px;
+}
+
+.legend__comment {
+  padding-top: 12px;
+  margin-bottom: 23px;
+}
+
+.legend__add {
+  padding-top: 14px;
+  margin-bottom: 15px;
 }
 
 .form__legend::after {
@@ -62,17 +75,17 @@
 }
 
 .legend__data::after {
-  top: 37px;
+  top: 32px;
 }
 
 .legend__comment::after {
   width: 158px;
-  top: 13px;
+  top: 25px;
 }
 
 .legend__add::after {
   width: 136px;
-  top: 13px;
+  top: 28px;
 }
 
 .form__button {
@@ -82,8 +95,8 @@
   text-transform: uppercase;
   background-color: #68b738;
   border: none;
-  padding: 14px 79px;
-  margin-left: 20px;
+  padding: 7px 77px 10px 81px;
+  margin: 17px 0 7px 20px;
   cursor: pointer;
 }
 
@@ -96,16 +109,19 @@
   background-color: #5eaa2f;
 }
 
-
 .form__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   color: #444444;
   text-transform: none;
   text-align: center;
+  width: 159px;
+  margin-left: 77px;
+  margin-bottom: 32px;
 }
 
 .info-cat label {
+  margin: 200px 0;
   margin-left: 20px;
 }
 
@@ -127,31 +143,35 @@
 
 .form__info-cat input[type="text"],
 .form__info-cat input[type="number"] {
-  margin: 7px 0px 7px 10px;
+  margin: 7px 0px 12px 10px;
   border: 1px solid #cfcfcf;
-  height: 45px;
+  height: 41px;
   text-transform: uppercase;
   padding-left: 15px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
 }
 
 .info-cat__name input[type="text"] {
-  width: 215px;
+  width: 212px;
+  margin: 14px 0px 6px 14px;
 }
 
 .info-cat__weight input[type="number"] {
-  width: 192px;
+  width: 187px;
+  margin: 7px 0px 7px 16px;
 }
 
 .info-cat__age input[type="number"] {
-  width: 157px;
+  width: 155px;
+  margin: 7px 0px 7px 16px;
 }
 
 .form__owner input[type="text"],
 .form__owner input[type="tel"] {
   margin: 7px 0px 7px 10px;
   border: 1px solid #cfcfcf;
-  height: 44px;
+  min-height: 41px;
   text-transform: uppercase;
   padding-left: 15px;
   font-size: 16px;
@@ -159,11 +179,13 @@
 }
 
 .form__owner input[type="text"] {
-  width: 207px;
+  width: 202px;
+  margin: 7px 0px 7px 12px;
 }
 
 .form__owner input[type="tel"] {
-  width: 190px;
+  margin: 7px 0px 7px 10px;
+  width: 187px;
 }
 
 .form__weight ul {
@@ -172,7 +194,14 @@
   padding: 0;
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
-  padding: 20px 0;
+  padding: 25px 0;
+  margin-top: -2px;
+}
+
+.form__weight li {
+  margin: 0;
+  margin-bottom: -1px;
+  margin-top: -3px;
 }
 
 .form__additional__list-check {
@@ -193,15 +222,20 @@
   color: #000000;
   width: 264px;
   border: 1px solid #ededed;
-  min-height: 148px;
+  height: 137px;
   padding-left: 14px;
-  padding-top: 14px;
+  padding-top: 10px;
+}
+
+.form__additional__list-check li{
+  margin: 0;
+  padding: 10px 0;
 }
 
 .form__weight-checkbox {
   position: relative;
   cursor: pointer;
-  padding-left: 40px;
+  padding-left: 47px;
 }
 
 .form__weight-checkbox input[type="radio"] + .checkbox-radio {
@@ -232,7 +266,7 @@
 .form__additional-checkbox {
   position: relative;
   cursor: pointer;
-  padding-left: 40px;
+  padding-left: 46px;
 }
 
 .form__additional-checkbox input[type="checkbox"] + .checkbox-indicator {

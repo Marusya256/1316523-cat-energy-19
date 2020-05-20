@@ -12,7 +12,13 @@
     <header class="page-header nav--opened">
       <div class="page-header__wrapper nav--nojs">
         <div class="page-header__nav nav">
-          <a href="index.html" class="nav__link-logo"><div class="nav__logo"></div></a>
+          <a href="index.html" class="nav__link-logo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="../img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+              <img class="nav__logo" src="../img/logo-mobile.svg" width="190" height="40" alt="Cat Energy">
+            </picture>
+          </a>
           <button type="button" class="nav__button">Меню</button>
         </div>
         <ul class="page-header__list list-menu menu-desktop">
@@ -37,13 +43,13 @@
             <fieldset class="form__weight">
               <ul>
                 <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="losingweight" checked class="visually-hidden"><span class="checkbox-radio"></span>Похудение</label></li><br>
-                <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="weightgain" class="visually-hidden"><span class="checkbox-radio"></span>Набор веса</label></li><br>
+                <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="weightgain" class="visually-hidden"><span class="checkbox-radio"></span>Набор массы</label></li><br>
                 <li><label class="form__weight-checkbox"><input type="radio" name="catradio" value="nothing" class="visually-hidden"><span class="checkbox-radio"></span>Не знаю (нужен ваш совет)</label></li>
               </ul>
             </fieldset>
             </div>
             <fieldset class="form__owner owner">
-              <legend class="form__legend legend__data"></p>Контактные данные (владельца кота)</legend>
+              <legend class="form__legend legend__data">Контактные данные (владельца кота)</legend>
               <div class="owner__label">
               <label>E-mail:*<input type="text" name="emailuser" placeholder="kuklachev@gmail.com" required></label><br>
               <label>Телефон:*<input type="tel" name="teluser" placeholder="8 (960) 900-60-90" required></label>
@@ -52,13 +58,13 @@
             <fieldset class="form__comment">
               <legend class="form__legend legend__comment">Комментарий</legend>
               <label>
-                <textarea name="comment" placeholder="Расскажите о всех поводках кота" rows="8"></textarea>
+                <textarea name="comment" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
               </label>
             </fieldset>
             <fieldset class="form__additional">
               <legend class="form__legend legend__add">Дополнительно</legend>
               <ul class="form__additional__list-check">
-                  <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="sweetener" checked><span class="checkbox-indicator"></span>Сахорозаменитель</label><br></li>
+                  <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="sweetener" checked><span class="checkbox-indicator"></span>Сахарозаменитель</label><br></li>
                   <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="Water"><span class="checkbox-indicator"></span>Питьевая вода</label><br></li>
                   <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="Milk"><span class="checkbox-indicator"></span>Молоко</label><br></li>
                   <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="Vitamins"><span class="checkbox-indicator"></span>Витамины</label></li>
@@ -66,17 +72,24 @@
             </fieldset>
             <div class="form__button-text">
             <input class="form__button" type="submit" value="Отправить заявку">
-            <p class="form__text">* - обязательные поля формы</p>
+            <p class="form__text">* - Обязательные поля</p>
             </div>
           </form>
           </div>
       </section>
       <section class="map">
-        <div class="map__wrapper  wrapper--grey">
+        <div class="map__wrapper">
+        <div class="map__block  block--grey">
            <h2>Приглашаем<br>к сотрудничеству дилеров!</h2>
            <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="map__img"></div>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="../img/bg-map-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.png">
+          <img class="map__img" src="../img/bg-map-mobile@1x.png" width="320" height="362" alt="Cat Energy">
+        </picture>
+        <img class="map__pin" src="../img/map-pin.png" width="53" height="45" alt="Маркер на карте">
+        </div>
       </section>
     </main>
     <foooter class="page-footer">
@@ -91,7 +104,13 @@
         </li>
         <li><div class="page-footer__copyright copyright">
           <p class="copyright_text">HTML Academy</p>
-          <svg class="copyright__logo" width="35" height="42" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+          <svg class="copyright__logo" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
+            36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7
+            11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8
+            3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2
+            1.8v13.6z"/>
+          </svg>
         </div>
         </li>
         </ul>
