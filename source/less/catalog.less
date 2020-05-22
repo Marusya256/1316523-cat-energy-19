@@ -18,67 +18,60 @@
   font-weight: normal;
   margin: 0;
   margin-left: 20px;
-  padding: 35px 0;
-  border-bottom: 2px solid #ededed;
+  padding: 31px 0;
 }
 
 .catalog-list {
   list-style: none;
   margin: 0;
-  margin-left: 20px;
   padding: 0;
 }
 
-.item-catalog {
-  border-bottom: 2px solid #ededed;
-  min-height: 208px;
-  padding: 20px 0;
+.catalog-list li:first-child {
+  border-top: 1px solid #ededed;
 }
 
+.item-catalog {
+  border-bottom: 1px solid #ededed;
+  height: 208px;
+  padding: 0px 0;
+}
 
 .item-catalog__info {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  height: 145px;
+  padding: 0;
 }
 
 .item-catalog__img {
   width: 140px;
   height: 144px;
+  margin-left: 20px;
 }
 
-.img__ch-sm {
-  background-image: url(../img/chicken-small-mobile@1x.jpg);
-}
-
-.img__ch-big {
-  background-image: url(../img/chicken-big-mobile@1x.jpg);
-}
-
-.img__fish-sm {
-  background-image: url(../img/fish-small-mobile@1x.jpg);
-}
-
-.img__fish-big {
-  background-image: url(../img/fish-big-mobile@1x.jpg);
-}
-
-.img__bw-sm {
-  background-image: url(../img/buckwheat-small-mobile@1x.jpg);
-}
-
-.img__bw-big {
-  background-image: url(../img/buckwheat-big-mobile@1x.jpg);
-}
-
-.img__rice-sm {
-  background-image: url(../img/rice-small-mobile@1x.jpg);
-}
-
-.item-catalog__table {
+.item-catalog__prace {
   width: 140px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+}
+
+.prace-line {
+  width: 140px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prace-line p {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   color: #444444;
+  padding: 0;
+  margin: 0;
 }
 
 .item-catalog__link {
@@ -88,11 +81,19 @@
   color: #111111;
 }
 
-.catalog-list__item h3 {
+.item-catalog__text {
+  height: 144px;
+  margin-top: 5px;
+}
+
+.item-catalog__heading {
   font-weight: normal;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: 16px;
+  font-size: 16px;
+  line-height: 20px;
   color: #111111;
+  width: 76px;
+  text-transform: uppercase;
 }
 
 .catalog-list__item p {
@@ -106,7 +107,7 @@
   text-decoration: none;
   background-color: #68b738;
   color: white;
-  padding: 12px 110px;
+  padding: 8px 109px 9px 110px;
   font-family: "Oswald";
   font-size: 16px;
   margin-left: 20px;
@@ -147,6 +148,13 @@
 .catalog-product__heading {
   text-transform: uppercase;
   text-align: center;
+  width: 210px;
+  font-weight: normal;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  margin: 24px 0 8px 57px;
 }
 
 .catalog-product__text {
@@ -155,6 +163,7 @@
   color: #444444;
   text-align: center;
   margin: 0;
+  margin-bottom: 2px;
 }
 
 .catalog-product__link {
@@ -162,7 +171,7 @@
   font-size: 16px;
   color: #444444;
   background-color: #f2f2f2;
-  padding: 12px 93px;
+  padding: 9px 95px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -186,6 +195,7 @@
     justify-content: center;
     min-width: 768px;
     margin: 0 auto;
+    margin-bottom: 0px;
   }
 
   .catalog-wrapper {
@@ -195,8 +205,9 @@
   .catalog h1 {
     font-size: 60px;
     margin-left: 30px;
-    padding: 35px 0;
+    padding: 14px 0;
     border: none;
+    margin-bottom: 35px;
   }
 
   .catalog-list {
@@ -214,15 +225,31 @@
     min-height: 208px;
     padding: 20px 0;
     width: 324px;
-    margin: 60px 30px;
-    height: 431px;
+    margin: 38px 30px;
+    margin-top: 103px;
+    height: 389px;
     background-color: #f2f2f2;
+    position: relative;
+  }
+
+  .item-catalog__link-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #68b738;
+    color: white;
+    padding: 7px 109px 7px 110px;
+    font-family: "Oswald";
+    font-size: 16px;
+    margin: 0;
+    left: 0px;
+    top: 320px;
+    position: absolute;
   }
 
   .item-catalog:last-child {
     background-color: #fff;
     border: 1px solid #f2f2f2;
-    height: 431px;
+    height: 389px;
     width: 322px;
   }
 
@@ -230,7 +257,8 @@
     width: 324px;
     height: 174px;
     background-repeat: no-repeat;
-    margin-top: -80px;
+    margin-top: -68px;
+    margin-left: 0;
   }
 
   .item-catalog:nth-child(2n) .item-catalog__img {
@@ -240,34 +268,6 @@
     margin-top: -106px;
   }
 
-  .img__ch-sm {
-    background-image: url(../img/chicken-small-tablet@1x.png);
-  }
-
-  .img__ch-big {
-    background-image: url(../img/chicken-big-tablet@1x.png);
-  }
-
-  .img__fish-sm {
-    background-image: url(../img/fish-small-tablet@1x.png);
-  }
-
-  .img__fish-big {
-    background-image: url(../img/fish-big-tablet@1x.png);
-  }
-
-  .img__bw-sm {
-    background-image: url(../img/buckwheat-small-tablet@1x.png);
-  }
-
-  .img__bw-big {
-    background-image: url(../img/buckwheat-big-tablet@1x.png);
-  }
-
-  .img__rice-sm {
-    background-image: url(../img/rice-small-tablet@1x.png);
-  }
-
   .item-catalog__info {
     display: flex;
     flex-direction: column;
@@ -275,27 +275,38 @@
     align-items: center;
   }
 
-  .item-catalog__table {
+  .item-catalog__prace {
+    width: 166px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .prace-line {
     width: 250px;
-    font-size: 16px;
-  }
-
-  .item-catalog__table tr {
-    min-height: 61px;
-  }
-
-  .item-catalog__table td {
-    border: none;
+    height: 13px;
+    padding: 9px 0;
     border-bottom: 1px solid #cdcdcd;
-    min-height: 61px;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .catalog-list__item h3 {
-    font-style: 20px;
+  .prace-line p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    padding: 0;
+    margin: 0;
+  }
+
+  .item-catalog__heading {
+    font-size: 20px;
     line-height: 20px;
     text-align: center;
-    max-width: 131px;
+    width: 131px;
     margin: 30px 70px;
+    margin-bottom: 15px;
     text-transform: uppercase;
   }
 
@@ -313,6 +324,18 @@
   .catalog-product {
     display: flex;
     flex-direction: column;
+  }
+
+  .catalog-product__heading {
+    text-transform: uppercase;
+    text-align: center;
+    width: 140px;
+    font-weight: normal;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    margin: 90px 0 25px 90px;
   }
 
   .catalog-product__plus {
@@ -333,13 +356,6 @@
     top: 20px;
   }
 
-  .catalog-product__heading {
-    text-transform: uppercase;
-    text-align: left;
-    margin: 0;
-    margin-left: 195px;
-  }
-
   .catalog-product__text {
     font-size: 16px;
     width: 173px;
@@ -352,11 +368,14 @@
     font-size: 16px;
     color: #444444;
     background-color: #f2f2f2;
-    padding: 12px 93px;
+    padding: 8px 80px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    margin: 20px;
+    margin: 0px;
+    left: 36px;
+    top: 350px;
+    position: absolute;
   }
 }
 
@@ -379,6 +398,7 @@
     margin-left: 0px;
     padding: 35px 0;
     border: none;
+    margin-bottom: 19px;
   }
 
   .catalog-list {
@@ -396,8 +416,9 @@
     min-height: 208px;
     padding: 20px 0;
     width: 245px;
-    margin: 60px 40px;
-    height: 432px;
+    margin: 95px 40px;
+    margin-bottom: 47px;
+    height: 390px;
     background-color: #f2f2f2;
     position: relative;
   }
@@ -405,7 +426,7 @@
   .item-catalog:last-child {
     background-color: #fff;
     border: 1px solid #f2f2f2;
-    height: 432px;
+    height: 390px;
     width: 243px;
     margin-right: 0;
   }
@@ -426,12 +447,12 @@
     color: white;
     padding: 0;
     padding: 10px 55px;
-    font-family: "Oswald";
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     margin-left: 38px;
     text-align: center;
     position: absolute;
-    top: 352px;
+    top: 320px;
     cursor: pointer;
   }
 
@@ -439,42 +460,14 @@
     width: 245px;
     height: 174px;
     background-repeat: no-repeat;
-    margin-top: -80px;
+    margin-top: -67px;
   }
 
   .item-catalog:nth-child(2n) .item-catalog__img {
     width: 245px;
     height: 208px;
     background-repeat: no-repeat;
-    margin-top: -106px;
-  }
-
-  .img__ch-sm {
-    background-image: url(../img/chicken-small-desktop@1x.png);
-  }
-
-  .img__ch-big {
-    background-image: url(../img/chicken-big-desktop@1x.png);
-  }
-
-  .img__fish-sm {
-    background-image: url(../img/fish-small-desktop@1x.png);
-  }
-
-  .img__fish-big {
-    background-image: url(../img/fish-big-desktop@1x.png);
-  }
-
-  .img__bw-sm {
-    background-image: url(../img/buckwheat-small-desktop@1x.png);
-  }
-
-  .img__bw-big {
-    background-image: url(../img/buckwheat-big-desktop@1x.png);
-  }
-
-  .img__rice-sm {
-    background-image: url(../img/rice-small-desktop@1x.png);
+    margin-top: -101px;
   }
 
   .item-catalog__info {
@@ -484,31 +477,38 @@
     align-items: center;
   }
 
-  .item-catalog__table {
-    width: 250px;
-    font-size: 16px;
+  .item-catalog__prace {
+    width: 166px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
   }
 
-  .item-catalog__table tr {
-    min-height: 61px;
-  }
-
-  .item-catalog__table td {
-    border: none;
+  .prace-line {
+    width: 100%;
+    height: 13px;
+    padding: 9px 0;
     border-bottom: 1px solid #cdcdcd;
-    min-height: 61px;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .item-catalog__text {
-
+  .prace-line p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    padding: 0;
+    margin: 0;
   }
 
-  .catalog-list__item h3 {
+  .item-catalog__heading {
     font-style: 20px;
     line-height: 20px;
     text-align: center;
     min-width: 133px;
     margin: 30px 70px;
+    margin-bottom: 15px;
     text-transform: uppercase;
   }
 
@@ -546,7 +546,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    margin: 164px 53px 32px;
+    margin: 87px 53px 32px;
     width: 137px;
   }
 
@@ -569,7 +569,7 @@
     margin: 0px;
     max-width: 169px;
     position: absolute;
-    top: 361px;
+    top: 331px;
     left: 37px;
   }
 }
