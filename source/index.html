@@ -101,7 +101,6 @@
         </div>
       </section>
       <section class="example">
-        <div class="example__bgc"></div>
         <div class="expamle__wrapper">
           <div class="example__desktop">
           <h2>Живой пример</h2>
@@ -127,14 +126,10 @@
               <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png 1x, ../img/before-tablet@2x.png 2x">
               <img class="slider__img" src="../img/before-mobile@1x.png" srcset="../img/before-mobile@2x.png 2x" width="320" height="240" alt="Изоражение кота Бориса До">
             </picture>
-            <div class="slider__text">
-              <p>Было</p>
-              <ul class="slider__list">
-              <li><label class="slider__button"><input type="radio" name="slider-radio" value="befor" class="visually-hidden" checked><span class="slider-radio"></span></label></li>
-                <li><label class="slider__button"><input type="radio" name="slider-radio" value="after" class="visually-hidden"><span class="slider-radio"></span></label></li>
-                </ul>
-              <p>Стало</p>
-            </div>
+            <ul class="slider__list">
+              <li><label class="slider__button button-after"><input type="radio" name="slider-radio"  value="befor" class="visually-hidden" checked><span class="slider-radio"></span>Было</label></li>
+              <li><label class="slider__button button-befor"><input type="radio" name="slider-radio" value="after" class="visually-hidden"><span class="slider-radio"></span>Стало</label></li>
+            </ul>
           </div>
           <div class="slider__after">
             <picture>
@@ -157,7 +152,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="../img/bg-map-desktop@1x.png 1x, ../img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.png 1x, ../img/bg-map-tablet@2x.png 2x">
-          <img class="map__img" src="../img/bg-map-mobile@1x.png" srcset="../img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="На адресс: Санкт-Петербург ул. Большая Конюшенная, д. 19/8">
+          <img class="map__img" src="../img/bg-map-mobile@1x.png" srcset="../img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Наш адресс: Санкт-Петербург ул. Большая Конюшенная, д. 19/8">
         </picture>
         <img class="map__pin" src="../img/map-pin.png" width="53" height="45" alt="Маркер на карте">
         </div>
@@ -183,7 +178,8 @@
             3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2
             1.8v13.6z" fill="#666666"/>
           </svg>
-        </div></a>
+        </a>
+        </div>
         </li>
         </ul>
       </div>
