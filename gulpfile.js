@@ -7,7 +7,8 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-// var del = require("del");
+var del = require("del");
+var posthtml = require("gulp-posthtml");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -35,9 +36,9 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-// gulp.task("clean", function () {
-//   return del("build");
-// })
+gulp.task("clean", function () {
+  return del("build");
+})
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -51,6 +52,12 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("copy", "css"));
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+  .pipe(posthtml())
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("build", gulp.series("copy", "css", "html"));
 gulp.task("start", gulp.series("build", "server"));
 
