@@ -1,0 +1,122 @@
+.legend__data::after {
+  top: 32px;
+}
+
+.form__owner label {
+  margin-left: 20px;
+}
+
+.form__owner input[type="text"],
+.form__owner input[type="tel"] {
+  margin: 7px 0px 7px 10px;
+  border: 1px solid #cfcfcf;
+  min-height: 41px;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.form__owner input[type="text"] {
+  width: 202px;
+  margin: 7px 0px 7px 12px;
+}
+
+.form__owner input[type="tel"] {
+  margin: 7px 0px 7px 10px;
+  width: 187px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__owner {
+    min-height: 295px;
+  }
+
+  .form__owner label {
+    margin-left: 70px;
+  }
+
+  .form__owner input[type="text"],
+  .form__owner input[type="tel"] {
+    margin: 7px 0px 7px 10px;
+    border: 1px solid #cfcfcf;
+    height: 44px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
+
+  .form__owner input[type="text"] {
+    width: 549px;
+  }
+
+  .form__owner input[type="tel"] {
+    width: 530px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__owner {
+    min-height: 225px;
+  }
+
+  .legend__add::after {
+    width: 1078px;
+  }
+
+  .legend__data::after,
+  .legend__data::before {
+    top: 57px;
+  }
+
+  .form__owner label {
+    margin: 0px;
+    width: 600px;
+  }
+
+  .label-mail {
+    margin-right: 60px;
+  }
+
+  .owner__label {
+    display: flex;
+    width: 1220px;
+    margin: 0;
+    margin-left: 110px;
+  }
+
+  .form__owner input[type="text"],
+  .form__owner input[type="tel"] {
+    margin: 7px 0px 7px 10px;
+    border: 1px solid #cfcfcf;
+    height: 44px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+  }
+
+  .form__owner input[type="text"]:hover ,
+  .form__owner input[type="tel"]:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  .form__owner input[type="text"]:focus ,
+  .form__owner input[type="tel"]:focus {
+    border: 1px solid #444444;
+  }
+
+  .form__owner input[type="text"]:required ,
+  .form__owner input[type="tel"]:required {
+    border: 1px solid #ff8282;
+  }
+
+  .form__owner input[type="text"] {
+    width: 489px;
+  }
+
+  .form__owner input[type="tel"] {
+    width: 470px;
+  }
+}
