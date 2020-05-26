@@ -37,22 +37,22 @@
           h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
           z" fill="#666666"/></symbol>
     </svg>
-    <header class="page-header nav--opened">
-      <div class="page-header__wrapper nav--nojs">
-        <div class="page-header__nav nav">
+    <header class="page-header">
+      <div class="page-header__wrapper nav nav--opened nav--nojs">
+        <div class="page-header__menu">
           <a href="index.html" class="nav__link-logo">
             <picture>
               <source media="(min-width: 1440px)" srcset="../img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-              <img class="nav__logo" src="../img/logo-mobile.svg" width="190" height="40" alt="Cat Energy">
+              <img class="nav__logo logo-header" src="../img/logo-mobile.svg" width="190" height="40" alt="Cat Energy">
             </picture>
           </a>
-          <button type="button" class="nav__button">Меню</button>
+          <button type="button" class="nav__button button-header">Меню</button>
         </div>
-        <ul class="page-header__list list-menu menu-desktop">
+        <ul class="page-header__list list-menu">
           <li class="list-menu__item"><a class="list-menu__link" href="index.html">Главная</a></li>
           <li class="list-menu__item"><a class="list-menu__link" href="catalog.html">Каталог продукции</a></li>
-         <li class="list-menu__item"><a class="list-menu__link link-off list-menu__item--activ" href="#">Подбор программы</a></li>
+         <li class="list-menu__item"><a class="list-menu__link list-menu__link--activ" href="#">Подбор программы</a></li>
         </ul>
       </div>
     </header>
@@ -68,7 +68,7 @@
               <label class="info-cat__weight">Вес (кг):*<input type="number" name="catweight" placeholder="7" required></label>
               <label class="info-cat__age">Возраст (лет):<input type="number" name="catage" placeholder="7"></label>
             </fieldset>
-            <fieldset class="form__weight">
+            <fieldset class="form__weight weight-list">
               <ul>
                 <li class="form__weight-li"><label class="form__weight-checkbox"><input type="radio" name="catradio" value="losingweight" checked class="visually-hidden"><span class="checkbox-radio"></span>Похудение</label></li>
                 <li class="form__weight-li"><label class="form__weight-checkbox"><input type="radio" name="catradio" value="weightgain" class="visually-hidden"><span class="checkbox-radio"></span>Набор массы</label></li>
@@ -83,13 +83,13 @@
               <label>Телефон:*<input type="tel" name="teluser" placeholder="8 (960) 900-60-90" required></label>
               </div>
             </fieldset>
-            <fieldset class="form__comment">
+            <fieldset class="form__comment comment">
               <legend class="form__legend legend__comment">Комментарий</legend>
               <label>
                 <textarea name="comment" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
               </label>
             </fieldset>
-            <fieldset class="form__additional">
+            <fieldset class="form__additional additional">
               <legend class="form__legend legend__add">Дополнительно</legend>
               <ul class="form__additional__list-check">
                   <li><label class="form__additional-checkbox"><input type="checkbox" class="visually-hidden" name="sweetener" checked><span class="checkbox-indicator"></span>Сахарозаменитель</label></li>
@@ -123,7 +123,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <ul class="page-footer__list">
-          <li><a href="index.html" class="page-footer__logo-link"><img class="page-footer__logo" src="../img/logo-footer.svg" alt="Логотип компании" width="128" height="24"/></a></li>
+          <li><a href="index.html" class="page-footer__logo-link"><img class="page-footer__logo logo-footer" src="../img/logo-footer.svg" alt="Логотип компании" width="128" height="24"/></a></li>
         <li>
           <ul class="page-footer__social list-social">
             <li><a href="#"><svg width="40" height="26"><use xlink:href="#icon-vk"></use></svg></a></li>

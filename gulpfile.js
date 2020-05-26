@@ -42,7 +42,7 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/font/**/*.{woff,woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.ico"
@@ -58,6 +58,6 @@ gulp.task("html", function () {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("copy", "css", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "html"));
 gulp.task("start", gulp.series("build", "server"));
 

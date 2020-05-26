@@ -32,6 +32,38 @@
     top: 0;
   }
 
+  .form__button {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #68b738;
+    border: none;
+    padding: 7px 77px 10px 81px;
+    margin: 17px 0 7px 20px;
+    cursor: pointer;
+  }
+
+  .form__button:hover {
+    background-color: #5eaa2f;
+  }
+
+  .form__button:active {
+    color: #8fc46e;
+    background-color: #5eaa2f;
+  }
+
+  .form__text {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #444444;
+    text-transform: none;
+    text-align: center;
+    width: 159px;
+    margin-left: 77px;
+    margin-bottom: 32px;
+  }
+
 @media (min-width: @tablet-width) {
   .profile__form fieldset {
     font-family: "Oswald", "Arial", sans-serif;
@@ -76,6 +108,35 @@
     left: 0;
     top: 0;
   }
+
+  .form__fieldset-info {
+    min-height: 530px;
+  }
+
+  .form__button-text {
+    display: flex;
+  }
+
+  .form__button {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #68b738;
+    border: none;
+    padding: 12px 65px;
+    margin-left: 70px;
+  }
+
+  .form__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-transform: none;
+    text-align: center;
+    margin-left: 60px;
+    width: 250px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -109,5 +170,37 @@
     background-color: #68b738;
     left: 0;
     top: 0;
+  }
+
+  .form__fieldset-info {
+    min-height: 255px;
+    margin-left: 70px;
+    display: flex;
+    width: 1440px;
+  }
+
+  .form__button-text {
+    display: flex;
+  }
+
+  .form__button {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #68b738;
+    border: none;
+    padding: 12px 208px;
+    margin-left: 110px;
+  }
+
+  .form__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-transform: none;
+    text-align: center;
+    margin-left: 60px;
+    width: 250px;
   }
 }

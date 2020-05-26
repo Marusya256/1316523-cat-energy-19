@@ -12,6 +12,11 @@
   width: 320px;
 }
 
+.page-footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 @media (min-width: @tablet-width) {
   .page-footer {
@@ -22,6 +27,13 @@
 
   .page-footer__wrapper {
     width: 768px;
+  }
+
+  .page-footer__list {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
@@ -35,5 +47,12 @@
     width: 1440px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-footer__list {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }

@@ -24,15 +24,15 @@
         c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z" fill="#666666"/>
       </symbol>
       <symbol viewBox="0 0 23 23" id="icon-ins" >
-          <g><style type="text/css">
-            .st0{fill:#666666;}
-          </style>
-          <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
-             M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
-          <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-            s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
-          <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
-        </g>
+        <g><style type="text/css">
+          .st0{fill:#666666;}
+        </style>
+        <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+           M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
+        <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
+          s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
+        <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
+      </g>
       </symbol>
       <symbol viewBox="0 0 14 23" id="icon-fb"><path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
           h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
@@ -48,21 +48,21 @@
         60,30.5 "/>
       </symbol>
     </svg>
-    <header class="page-header nav--opened">
-      <div class="page-header__wrapper nav--nojs">
-        <div class="page-header__nav nav">
+    <header class="page-header">
+      <div class="page-header__wrapper nav nav--opened nav--nojs">
+        <div class="page-header__menu">
           <a href="index.html" class="nav__link-logo">
             <picture>
               <source media="(min-width: 1440px)" srcset="../img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-              <img class="nav__logo" src="../img/logo-mobile.svg" width="190" height="40" alt="Cat Energy">
+              <img class="nav__logo logo-header" src="../img/logo-mobile.svg" width="190" height="40" alt="Cat Energy">
             </picture>
           </a>
-          <button type="button" class="nav__button">Меню</button>
+          <button type="button" class="nav__button button-header">Меню</button>
         </div>
-        <ul class="page-header__list list-menu menu-desktop">
+        <ul class="page-header__list list-menu">
           <li class="list-menu__item"><a class="list-menu__link" href="index.html">Главная</a></li>
-          <li class="list-menu__item"><a class="list-menu__link link-off list-menu__item--activ"  href="#">Каталог продукции</a></li>
+          <li class="list-menu__item"><a class="list-menu__link list-menu__link--activ"  href="#">Каталог продукции</a></li>
          <li class="list-menu__item"><a class="list-menu__link" href="form.html">Подбор программы</a></li>
         </ul>
       </div>
@@ -308,28 +308,40 @@
             <li class="list-product__item">
               <div class="list-product__item--p">
               <p class="list-product__heading">Сахарозаменитель</p>
-              <p class="list-product__text">1 упаковка (100г) 200 Р.</p>
+              <div class="list-product__text">
+                <p>1 упаковка (100г)</p>
+                <p>200 Р.</p>
+              </div>
               </div>
               <a class="list-product__link" href="#">Заказать</a>
             </li>
             <li class="list-product__item">
               <div class="list-product__item--p">
               <p class="list-product__heading">Питьевая вода</p>
-              <p class="list-product__text">5 литров 50 Р.</p>
+              <div class="list-product__text">
+                <p>5 литров</p>
+                <p>50 Р.</p>
+              </div>
               </div>
               <a class="list-product__link" href="#">Заказать</a>
            </li>
            <li class="list-product__item">
             <div class="list-product__item--p">
               <p class="list-product__heading">Молоко</p>
-              <p class="list-product__text">1 литр 100 Р.</p>
+              <div class="list-product__text">
+                <p>1 литр</p>
+                <p>100 Р.</p>
+              </div>
             </div>
               <a class="list-product__link" href="#">Заказать</a>
             </li>
             <li class="list-product__item">
               <div class="list-product__item--p">
               <p class="list-product__heading">Витамины</p>
-              <p class="list-product__text">1 упаковка (30г) 300 Р.</p>
+              <div class="list-product__text">
+                <p>1 упаковка (30г)</p>
+                <p>300 Р.</p>
+              </div>
               </div>
               <a class="list-product__link" href="#">Заказать</a>
             </li>
@@ -372,7 +384,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <ul class="page-footer__list">
-          <li><a href="index.html" class="page-footer__logo-link"><img class="page-footer__logo" src="../img/logo-footer.svg" alt="Логотип компании" width="128" height="24"/></a></li>
+          <li><a href="index.html" class="page-footer__logo-link"><img class="page-footer__logo logo-footer" src="../img/logo-footer.svg" alt="Логотип компании" width="128" height="24"/></a></li>
         <li>
           <ul class="page-footer__social list-social">
             <li><a href="#"><svg width="40" height="26"><use xlink:href="#icon-vk"></use></svg></a></li>
