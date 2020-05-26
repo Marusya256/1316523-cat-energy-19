@@ -3,6 +3,17 @@
   flex-direction: column;
   min-width: 320px;
   align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cover-bg-mobile {
+  background-color: #65a93c;
+  width: 100%;
+  height: 305px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
 }
 
 .cover__wrapper {
@@ -77,6 +88,10 @@
     align-items: center;
   }
 
+  .cover-bg-mobile {
+    background-color: #fff;
+  }
+
   .cover__wrapper {
     position: relative;
     background-image: none;
@@ -127,6 +142,10 @@
     align-items: center;
   }
 
+  .cover-bg-mobile {
+    background-color: #fff;
+  }
+
   .cover__wrapper {
     position: relative;
     background-image: none;
@@ -138,7 +157,7 @@
 
   .cover_bg-dekstop {
     background-image: url(../img/index-background-desktop@1x.jpg);
-    background-color: #64a83b;
+    background-color: #65a93c;
     background-repeat: no-repeat;
     width: 721px;
     height: 696px;

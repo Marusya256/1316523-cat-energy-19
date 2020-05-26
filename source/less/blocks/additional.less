@@ -3,8 +3,13 @@
   margin-bottom: 15px;
 }
 
-.legend__add::after {
+.form__additional::after {
+  content: "";
+  position: absolute;
   width: 136px;
+  height: 3px;
+  background-color: #68b738;
+  right: 0;
   top: 28px;
 }
 
@@ -40,7 +45,7 @@
   left: 0;
   width: 29px;
   height: 29px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid #e6e6e6;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -51,7 +56,7 @@
   left: 0;
   width: 29px;
   height: 29px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid #e6e6e6;
   background-image: url(../img/tick.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -72,18 +77,24 @@
     margin-bottom: 15px;
   }
 
-  .legend__add::after {
+  .form__additional::after {
+    content: "";
+    position: absolute;
     width: 446px;
+    height: 3px;
+    background-color: #68b738;
+    right: 0;
+    top: 35px;
   }
 
-  .legend__data::after,
-  .legend__data::before {
-    top: 57px;
-  }
-
-  .legend__add::after,
-  .legend__add::before {
-    top: 23px;
+  .form__additional::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+    left: 0;
+    top: 35px;
   }
 
   .form__additional label {
@@ -116,7 +127,7 @@
     left: 0;
     width: 39px;
     height: 39px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #e6e6e6;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -127,7 +138,7 @@
     left: 0;
     width: 39px;
     height: 39px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #e6e6e6;
     background-image: url(../img/tick.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -141,9 +152,28 @@
     height: 154px;
   }
 
-  .legend__add::after,
-  .legend__add::before {
-    top: 23px;
+  .legend__add {
+    margin-left: 110px;
+  }
+
+  .form__additional::after {
+    content: "";
+    position: absolute;
+    width: 1078px;
+    height: 3px;
+    background-color: #68b738;
+    right: 0;
+    top: 35px;
+  }
+
+  .form__additional::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: #68b738;
+    left: 0;
+    top: 35px;
   }
 
   .form__additional label {
@@ -157,11 +187,12 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 40px;
+    margin-top: 25px;
   }
 
   .form__additional__list-check li {
     padding: 0;
-    margin: 25px 30px 25px 40px;
+    margin: 25px 10px 25px 40px;
     width: 274px;
   }
 
@@ -177,7 +208,7 @@
     left: 0;
     width: 39px;
     height: 39px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #e6e6e6;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -188,7 +219,7 @@
     left: 0;
     width: 39px;
     height: 39px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #e6e6e6;
     background-image: url(../img/tick.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;

@@ -3,9 +3,14 @@
   margin-bottom: 23px;
 }
 
-.legend__comment::after {
+.form__comment::after {
+  content: "";
+  position: absolute;
   width: 158px;
-  top: 25px;
+  height: 3px;
+  background-color: #68b738;
+  right: 0;
+  top: 26px;
 }
 
 .form__comment label {
@@ -18,7 +23,7 @@
   text-transform: uppercase;
   color: #000000;
   width: 264px;
-  border: 1px solid #ededed;
+  border: 1px solid #e6e6e6;
   height: 137px;
   padding-left: 14px;
   padding-top: 10px;
@@ -29,13 +34,24 @@
     height: 310px;
   }
 
-  .legend__comment::after {
+  .form__comment::after {
+    content: "";
+    position: absolute;
     width: 479px;
+    height: 3px;
+    background-color: #68b738;
+    right: 0;
+    top: 34px;
   }
 
-  .legend__comment::after,
-  .legend__comment::before {
-    top: 23px;
+  .form__comment::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+    left: 0;
+    top: 34px;
   }
 
   .form__comment label {
@@ -48,25 +64,41 @@
     text-transform: uppercase;
     color: #000000;
     width: 613px;
-    border: 1px solid #ededed;
+    border: 1px solid #e6e6e6;
     height: 156px;
-    padding-left: 14px;
+    padding-left: 16px;
     padding-top: 8px;
+    margin-top: 35px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form__comment {
-    height: 315px;
+    height: 350px;
   }
 
-  .legend__comment::after {
+  .legend__comment {
+    position: relative;
+  }
+
+  .form__comment::after {
+    content: "";
+    position: absolute;
     width: 1111px;
+    height: 3px;
+    background-color: #68b738;
+    right: 0;
+    top: 34px;
   }
 
-  .legend__comment::after,
-  .legend__comment::before {
-    top: 23px;
+  .form__comment::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: #68b738;
+    left: 0;
+    top: 34px;
   }
 
   .form__comment label {
@@ -79,9 +111,19 @@
     text-transform: uppercase;
     color: #000000;
     width: 1203px;
-    border: 1px solid #ededed;
+    border: 1px solid #e6e6e6;
     min-height: 155px;
     padding-left: 17px;
     padding-top: 8px;
+    margin-top: 55px;
+  }
+
+  .form__comment textarea:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  .form__comment textarea:focus {
+    outline: none;
+    border: 2px solid #444444;
   }
 }
