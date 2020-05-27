@@ -18,7 +18,7 @@
     opacity: 0.6;
   }
 
-  .nav--opened .list-menu {
+  .nav--opened .nav-menu {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -28,18 +28,18 @@
     min-height: 148px;
   }
 
-  .nav--close + .list-menu {
+  .nav--close + .nav-menu {
     display: none;
   }
 
-  .list-menu__item {
+  .nav-menu__item {
     padding: 10px;
     text-align: center;
     border-top: 1px solid #ededed;
     color: #000000;
   }
 
-  .list-menu__link {
+  .nav-menu__link {
     text-decoration: none;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
@@ -48,11 +48,11 @@
     margin: 0;
   }
 
-  .list-menu__link:not(.list-menu__link--activ):hover {
+  .nav-menu__link:not(.nav-menu__link--activ):hover {
     opacity: 0.6;
   }
 
-  .list-menu__link:not(.list-menu__link--activ):active {
+  .nav-menu__link:not(.nav-menu__link--activ):active {
     opacity: 0.3;
   }
 
@@ -118,7 +118,7 @@
       height: 59px;
       margin: 24px 30px;
     }
-    .nav--opened .list-menu {
+    .nav--opened .nav-menu {
       list-style: none;
       display: flex;
       flex-direction: row;
@@ -132,28 +132,28 @@
       z-index: 1;
     }
 
-    .list-menu__item {
+    .nav-menu__item {
       font-size: 18px;
       border: none;
       color: #000000;
       padding: 18px;
     }
 
-    .list-menu__link--activ {
+    .nav-menu__link--activ {
       text-align: center;
       border: none;
       border-bottom: 2px solid #68b738;
     }
 
-    .list-menu__link {
+    .nav-menu__link {
       padding: 5px 0;
     }
 
-    .list-menu__item:first-child {
+    .nav-menu__item:first-child {
       padding-left: 0;
     }
 
-    .list-menu__item:last-child {
+    .nav-menu__item:last-child {
       padding-right: 0;
     }
 
@@ -171,7 +171,7 @@
       margin-top: 54px;
     }
 
-    .nav--opened .list-menu {
+    .nav--opened .nav-menu {
       list-style: none;
       display: flex;
       flex-direction: row;
@@ -183,14 +183,14 @@
       margin-top: 53px;
     }
 
-    .list-menu__link {
+    .nav-menu__link {
       font-size: 20px;
       border: none;
       color: #000000;
       padding: 7px 0;
     }
 
-    .list-menu__link--activ {
+    .nav-menu__link--activ {
       padding: 7px 0;
       text-align: center;
       border: none;
@@ -198,11 +198,11 @@
       color: #000000;
     }
 
-    .list-menu--white .list-menu__link {
+    .nav-menu--white .nav-menu__link {
       color: #fff;
     }
 
-    .list-menu--white .list-menu__link--activ {
+    .nav-menu--white .nav-menu__link--activ {
       border-bottom: 2px solid #fff;
       color: #fff;
     }

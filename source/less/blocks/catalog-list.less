@@ -8,26 +8,26 @@
     border-top: 1px solid #ededed;
   }
 
-  .item-catalog {
+  .catalog-list__item {
     border-bottom: 1px solid #ededed;
     height: 208px;
     padding: 0px 0;
   }
 
-  .item-catalog__info {
+  .catalog-list__item-info {
     display: flex;
     margin-bottom: 8px;
     height: 145px;
     padding: 0;
   }
 
-  .item-catalog__img {
+  .catalog-list__item-img {
     width: 140px;
     height: 144px;
     margin-left: 20px;
   }
 
-  .item-catalog__prace {
+  .catalog-list__item-prace {
     width: 140px;
     height: 50px;
     display: flex;
@@ -35,7 +35,7 @@
     margin-left: 0px;
   }
 
-  .prace-line {
+   .catalog-list__prace-line {
     width: 140px;
     height: 20px;
     padding: 0;
@@ -43,7 +43,7 @@
     justify-content: space-between;
   }
 
-  .prace-line p {
+  .catalog-list__prace-line p {
     font-family: "Arial", sans-serif;
     font-size: 12px;
     color: #444444;
@@ -51,19 +51,19 @@
     margin: 0;
   }
 
-  .item-catalog__link {
+  .catalog-list__item-link {
     text-decoration: none;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     color: #111111;
   }
 
-  .item-catalog__text {
+  .catalog-list__item-text {
     height: 144px;
     margin-top: 5px;
   }
 
-  .item-catalog__heading {
+  .catalog-list__item-heading {
     font-weight: normal;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
@@ -79,7 +79,7 @@
     color: #444444;
   }
 
-  .item-catalog__link-button {
+  .catalog-list__item-button {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #68b738;
@@ -90,11 +90,11 @@
     margin-left: 20px;
   }
 
-  .item-catalog__link-button:hover {
+  .catalog-list__item-button:hover {
     background-color: #5eaa2f;
   }
 
-  .item-catalog__link-button:active {
+  .catalog-list__item-button:active {
     color: #8fc46e;
     background-color: #5eaa2f;
   }
@@ -110,7 +110,7 @@
         width: 768px;
       }
 
-      .item-catalog {
+      .catalog-list__item {
         border: none;
         min-height: 208px;
         padding: 20px 0;
@@ -122,7 +122,7 @@
         position: relative;
       }
 
-      .item-catalog__link-button {
+      .catalog-list__item-button {
         text-transform: uppercase;
         text-decoration: none;
         background-color: #68b738;
@@ -136,14 +136,14 @@
         position: absolute;
       }
 
-      .item-catalog:last-child {
+      .catalog-list__item:last-child {
         background-color: #fff;
         border: 1px solid #f2f2f2;
         height: 389px;
         width: 322px;
       }
 
-      .item-catalog__img {
+      .catalog-list__item-img {
         width: 324px;
         height: 174px;
         background-repeat: no-repeat;
@@ -151,21 +151,21 @@
         margin-left: 0;
       }
 
-      .item-catalog:nth-child(2n) .item-catalog__img {
+      .catalog-list__item:nth-child(2n) .catalog-list__item-img {
         width: 324px;
         height: 208px;
         background-repeat: no-repeat;
         margin-top: -106px;
       }
 
-      .item-catalog__info {
+      .catalog-list__item-info {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
         align-items: center;
       }
 
-      .item-catalog__prace {
+      .catalog-list__item-prace {
         width: 166px;
         height: 250px;
         display: flex;
@@ -173,7 +173,7 @@
         margin-left: 15px;
       }
 
-      .prace-line {
+      .catalog-list__prace-line {
         width: 250px;
         height: 13px;
         padding: 9px 0;
@@ -182,7 +182,7 @@
         justify-content: space-between;
       }
 
-      .prace-line p {
+      .catalog-list__prace-line p {
         font-family: "Arial", sans-serif;
         font-size: 16px;
         color: #444444;
@@ -190,7 +190,7 @@
         margin: 0;
       }
 
-      .item-catalog__heading {
+      .catalog-list__item-heading {
         font-size: 20px;
         line-height: 20px;
         text-align: center;
@@ -204,7 +204,7 @@
         font-size: 16px;
       }
 
-      .item-catalog__link-button {
+      .catalog-list__item-button {
         padding: 13px 98px;
         font-size: 16px;
         margin: 30px;
@@ -223,7 +223,7 @@
         width: 1220px;
       }
 
-      .item-catalog {
+      .catalog-list__item {
         border: none;
         min-height: 208px;
         padding: 20px 0;
@@ -235,7 +235,7 @@
         position: relative;
       }
 
-      .item-catalog:last-child {
+      .catalog-list__item:last-child {
         background-color: #fff;
         border: 1px solid #f2f2f2;
         height: 390px;
@@ -243,16 +243,16 @@
         margin-right: 0;
       }
 
-      .item-catalog:first-child,
-      .item-catalog:nth-child(5) {
+      .catalog-list__item:first-child,
+      .catalog-list__item:nth-child(5) {
         margin-left: 0;
       }
 
-      .item-catalog:nth-child(4) {
+      .catalog-list__item:nth-child(4) {
         margin-right: 0;
       }
 
-      .item-catalog__link-button {
+      .catalog-list__item-button {
         text-transform: uppercase;
         text-decoration: none;
         background-color: #68b738;
@@ -268,28 +268,28 @@
         cursor: pointer;
       }
 
-      .item-catalog__img {
+      .catalog-list__item-img {
         width: 245px;
         height: 174px;
         background-repeat: no-repeat;
         margin-top: -67px;
       }
 
-      .item-catalog:nth-child(2n) .item-catalog__img {
+      .catalog-list__item:nth-child(2n) .catalog-list__item-img {
         width: 245px;
         height: 208px;
         background-repeat: no-repeat;
         margin-top: -101px;
       }
 
-      .item-catalog__info {
+      .catalog-list__item-info {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
         align-items: center;
       }
 
-      .item-catalog__prace {
+      .catalog-list__item-prace {
         width: 166px;
         height: 90px;
         display: flex;
@@ -297,7 +297,7 @@
         margin-left: 55px;
       }
 
-      .prace-line {
+      .catalog-list__prace-line {
         width: 100%;
         height: 13px;
         padding: 9px 0;
@@ -306,7 +306,7 @@
         justify-content: space-between;
       }
 
-      .prace-line p {
+      .catalog-list__prace-line p {
         font-family: "Arial", sans-serif;
         font-size: 16px;
         color: #444444;
@@ -314,7 +314,7 @@
         margin: 0;
       }
 
-      .item-catalog__heading {
+      .catalog-list__item-heading {
         font-style: 20px;
         line-height: 20px;
         text-align: center;
