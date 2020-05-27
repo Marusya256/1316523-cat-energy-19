@@ -1,9 +1,15 @@
+.comment {
+  width: 280px;
+  padding: 5px 0;
+  height: 225px;
+}
+
 .legend__comment {
   padding-top: 12px;
   margin-bottom: 23px;
 }
 
-.form__comment::after {
+.comment::after {
   content: "";
   position: absolute;
   width: 158px;
@@ -13,28 +19,30 @@
   top: 26px;
 }
 
-.form__comment label {
+.comment label {
   margin-left: 20px;
 }
 
-.form__comment textarea {
+.comment textarea {
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
-  width: 264px;
+  width: 262px;
   border: 1px solid #e6e6e6;
   height: 137px;
+  margin-top: 7px;
   padding-left: 14px;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 @media (min-width: @tablet-width) {
-  .form__comment {
+  .comment {
     height: 310px;
+    padding: 20px 0;
   }
 
-  .form__comment::after {
+  .comment::after {
     content: "";
     position: absolute;
     width: 479px;
@@ -44,7 +52,7 @@
     top: 34px;
   }
 
-  .form__comment::before {
+  .comment::before {
     content: "";
     position: absolute;
     width: 30px;
@@ -54,11 +62,11 @@
     top: 34px;
   }
 
-  .form__comment label {
+  .comment label {
     margin-left: 70px;
   }
 
-  .form__comment textarea {
+  .comment textarea {
     font-size: 20px;
     font-family: "Oswald", "Arial", sans-serif;
     text-transform: uppercase;
@@ -73,7 +81,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__comment {
+  .comment {
     height: 350px;
   }
 
@@ -81,7 +89,7 @@
     position: relative;
   }
 
-  .form__comment::after {
+  .comment::after {
     content: "";
     position: absolute;
     width: 1111px;
@@ -91,7 +99,7 @@
     top: 34px;
   }
 
-  .form__comment::before {
+  .comment::before {
     content: "";
     position: absolute;
     width: 70px;
@@ -101,11 +109,11 @@
     top: 34px;
   }
 
-  .form__comment label {
+  .comment label {
     margin-left: 110px;
   }
 
-  .form__comment textarea {
+  .comment textarea {
     font-size: 20px;
     font-family: "Oswald", "Arial", sans-serif;
     text-transform: uppercase;
@@ -118,11 +126,11 @@
     margin-top: 55px;
   }
 
-  .form__comment textarea:hover {
+  .comment textarea:hover {
     border: 1px solid #cdcdcd;
   }
 
-  .form__comment textarea:focus {
+  .comment textarea:focus {
     outline: none;
     border: 2px solid #444444;
   }

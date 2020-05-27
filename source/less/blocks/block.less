@@ -1,4 +1,4 @@
-.example__block {
+.block {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -51,38 +51,42 @@
   }
 
 @media (min-width: @tablet-width) {
-  .example__block {
+  .block {
     margin-left: 0px;
     margin-right: 170px;
+    margin-top: 13px;
   }
 
   .block__heading {
     font-size: 30px;
+    padding: 12px 0;
   }
 
   .block__content {
-    font-size: 16px;
-    line-height: 16px;
-    width: 85px;
-    margin-left: 40px;
+    font-size: 14px;
+    line-height: 14px;
+    width: 135px;
+    margin-left: 15px;
     margin-top: -10px;
   }
 
   .block__time {
     width: 162px;
     height: 74px;
+    margin-left: 20px;
   }
 
   .block__weight {
     width: 162px;
     height: 74px;
+    margin-right: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .example__block {
+  .block {
     margin-left: 0px;
-    margin-top: 32px;
+    margin-top: 0px;
     width: 365px;
   }
 

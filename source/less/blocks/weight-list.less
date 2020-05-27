@@ -1,8 +1,12 @@
-.form__weight label {
+.weight-list {
+  padding: 10px 0;
+}
+
+.weight-list label {
     margin-left: 20px;
   }
 
-  .form__weight ul {
+  .weight-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -12,22 +16,22 @@
     margin-top: -2px;
   }
 
-  .form__weight li {
+  .weight-list li {
     padding: 0;
     margin: 17px 0 0 0;
   }
 
-  .form__weight li:first-child {
+  .weight-list li:first-child {
     margin-top: 0px;
   }
 
-  .form__weight-checkbox {
+  .weight-list-checkbox {
     position: relative;
     cursor: pointer;
     padding-left: 47px;
   }
 
-  .form__weight-checkbox input[type="radio"] + .checkbox-radio {
+  .weight-list-checkbox input[type="radio"] + .checkbox-radio {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,7 +43,7 @@
     transform: translateY(-50%);
   }
 
-  .form__weight-checkbox input[type="radio"]:checked + .checkbox-radio {
+  .weight-list-checkbox input[type="radio"]:checked + .checkbox-radio {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,16 +56,20 @@
     transform: translateY(-50%);
   }
 
-  .form__weight-checkbox:active {
+  .weight-list-checkbox:active {
     opacity: 0.3;
   }
 
 @media (min-width: @tablet-width) {
-  .form__weight label {
+  .weight-list {
+    padding: 40px 0;
+  }
+
+  .weight-list label {
     margin-left: 30px;
   }
 
-  .form__weight ul {
+  .weight-list ul {
     list-style: none;
     margin: 0;
     border: 1px solid #ededed;
@@ -74,22 +82,22 @@
     line-height: 30px;
   }
 
-  .form__weight li {
+  .weight-list li {
     padding: 0;
     margin: 23px 0;
   }
 
-  .form__weight li:first-child {
+  .weight-list li:first-child {
     margin-top: 10px;
   }
 
-  .form__weight-checkbox {
+  .weight-list-checkbox {
     position: relative;
     cursor: pointer;
     padding-left: 60px;
   }
 
-  .form__weight-checkbox input[type="radio"] + .checkbox-radio {
+  .weight-list-checkbox input[type="radio"] + .checkbox-radio {
     position: absolute;
     top: 0;
     left: 0;
@@ -101,7 +109,7 @@
     transform: translateY(-50%);
   }
 
-  .form__weight-checkbox input[type="radio"]:checked + .checkbox-radio {
+  .weight-list-checkbox input[type="radio"]:checked + .checkbox-radio {
     position: absolute;
     top: 0;
     left: 0;
@@ -116,39 +124,45 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__weight label {
+  .weight-list label {
     margin-left: 20px;
   }
 
-  .form__weight {
+  .weight-list label {
+    margin-left: 25px;
+  }
+
+  .weight-list {
     width: 600px;
   }
 
-  .form__weight ul {
+  .weight-list ul {
     list-style: none;
     margin: 0;
     border: 1px solid #ededed;
     padding: 20px 0;
     width: 568px;
     height: 155px;
+    margin-right: 180px;
+    margin-top: 10px;
   }
 
-  .form__weight .form__weight-li {
+  .weight-list .form__weight-li {
     padding: 0;
     margin: 25px 0;
   }
 
-  .form__weight li:first-child {
+  .weight-list li:first-child {
     margin-top: 7px;
   }
 
-  .form__weight-checkbox {
+  .weight-list-checkbox {
     position: relative;
     cursor: pointer;
     padding-left: 60px;
   }
 
-  .form__weight-checkbox input[type="radio"] + .checkbox-radio {
+  .weight-list-checkbox input[type="radio"] + .checkbox-radio {
     position: absolute;
     top: 0;
     left: 0;
@@ -160,7 +174,7 @@
     transform: translateY(-50%);
   }
 
-  .form__weight-checkbox input[type="radio"]:checked + .checkbox-radio {
+  .weight-list-checkbox input[type="radio"]:checked + .checkbox-radio {
     position: absolute;
     top: 0;
     left: 0;
